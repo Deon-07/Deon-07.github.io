@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Tracker - Habits, Focus & Expense Tracker</title>
+    <meta name="description" content="Take control of your daily routine with Daily Tracker. Build habits, maintain study focus streaks, track expenses, and reach your goals.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #6366f1;
+            --primary-dark: #4f46e5;
+            --primary-light: #818cf8;
+            --secondary: #10b981;
+            --amber: #f59e0b;
+            --bg-gradient: radial-gradient(circle at 50% 0%, #1e1b4b 0%, #0f172a 60%, #090d16 100%);
+            --card-bg: rgba(30, 41, 59, 0.7);
+            --card-border: rgba(99, 102, 241, 0.2);
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-gradient);
+            background-color: #090d16;
+            color: var(--text-main);
+            min-height: 100vh;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Navbar */
+        header {
+            padding: 24px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(12px);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(15, 23, 42, 0.8);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: var(--text-main);
+            font-weight: 800;
+            font-size: 1.25rem;
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, #6366f1, #38bdf8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(99, 102, 241, 0.4);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 28px;
+            align-items: center;
+        }
+
+        nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: var(--text-main);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 80px 0 60px;
+            text-align: center;
+            position: relative;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 16px;
+            border-radius: 999px;
+            background: rgba(99, 102, 241, 0.15);
+            border: 1px solid rgba(99, 102, 241, 0.3);
+            color: #a5b4fc;
+            font-size: 0.85rem;
+            font-weight: 700;
+            margin-bottom: 24px;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            line-height: 1.15;
+            margin-bottom: 20px;
+            background: linear-gradient(to right, #ffffff, #c7d2fe, #38bdf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            max-width: 680px;
+            margin: 0 auto 36px;
+        }
+
+        .cta-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: linear-gradient(135deg, #4f46e5, #6366f1);
+            color: white;
+            padding: 16px 32px;
+            border-radius: 16px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            text-decoration: none;
+            box-shadow: 0 10px 25px -5px rgba(99, 102, 241, 0.5);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 30px -5px rgba(99, 102, 241, 0.6);
+        }
+
+        /* Features Section */
+        .features {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .section-title h2 {
+            font-size: 2.25rem;
+            font-weight: 800;
+            margin-bottom: 12px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 24px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 24px;
+            padding: 32px 24px;
+            backdrop-filter: blur(16px);
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(99, 102, 241, 0.4);
+        }
+
+        .card-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+
+        .card h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        /* Privacy Policy Section */
+        .privacy-section {
+            padding: 80px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .policy-card {
+            background: rgba(15, 23, 42, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+            padding: 40px;
+        }
+
+        .policy-card h2 {
+            font-size: 1.8rem;
+            margin-bottom: 8px;
+        }
+
+        .policy-card .date {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            margin-bottom: 24px;
+        }
+
+        .policy-card h3 {
+            font-size: 1.2rem;
+            color: #a5b4fc;
+            margin: 24px 0 8px;
+        }
+
+        .policy-card p, .policy-card ul {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 14px;
+        }
+
+        .policy-card ul {
+            padding-left: 24px;
+        }
+
+        .policy-card li {
+            margin-bottom: 6px;
+        }
+
+        /* Footer */
+        footer {
+            padding: 40px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: var(--primary-light);
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5rem; }
+            .hero p { font-size: 1.05rem; }
+            nav ul { gap: 16px; }
+            .policy-card { padding: 24px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                    </svg>
+                </div>
+                Daily Tracker
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                    <li><a href="app-ads.txt" target="_blank">app-ads.txt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="badge">
+                <span>✨ Built for Consistency & Success</span>
+            </div>
+            <h1>Track Habits, Master Focus & Manage Expenses</h1>
+            <p>The all-in-one productivity companion. Build unbroken study streaks, track your daily budget, and unlock your true potential.</p>
+            <a href="https://play.google.com/store/apps/details?id=com.dailytracker.habits.streak" target="_blank" class="cta-btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M3.609 1.814L13.792 12 3.61 22.186a1.44 1.44 0 0 1-.227-.791V2.605c0-.285.08-.558.226-.791zm11.233 11.234l2.584 2.583-12.012 6.899 9.428-9.482zm0-2.096L5.414 1.47l12.012 6.898-2.584 2.584zm1.464 1.464l3.195 1.834c.883.507.883 1.334 0 1.841l-3.195 1.834-2.128-2.128 2.128-2.128z"/>
+                </svg>
+                Get it on Google Play
+            </a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>Designed for High Achievers</h2>
+                <p style="color: var(--text-muted);">Everything you need to organize your daily routine in one unified app.</p>
+            </div>
+            <div class="grid">
+                <div class="card">
+                    <div class="card-icon" style="background: rgba(99, 102, 241, 0.2); color: #818cf8;">🔥</div>
+                    <h3>Habit & Streak Counters</h3>
+                    <p>Build lasting habits with visual streaks, milestones, and celebration badges that keep you motivated daily.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon" style="background: rgba(16, 185, 129, 0.2); color: #34d399;">⏱️</div>
+                    <h3>Focus & Study Timer</h3>
+                    <p>Integrated study timer with dual-color Study vs Break analytics to master your time and balance sessions.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon" style="background: rgba(245, 158, 11, 0.2); color: #fbbf24;">💰</div>
+                    <h3>Smart Expense Tracker</h3>
+                    <p>Log transactions in seconds, monitor daily spending limits, and categorize expenses with intuitive charts.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon" style="background: rgba(56, 189, 248, 0.2); color: #38bdf8;">📊</div>
+                    <h3>Visual Analytics & Heatmap</h3>
+                    <p>Track your yearly progress with comprehensive monthly activity heatmaps and detailed breakdown graphs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Privacy Policy Section -->
+    <section class="privacy-section" id="privacy">
+        <div class="container">
+            <div class="policy-card">
+                <h2>Privacy Policy for Daily Tracker</h2>
+                <div class="date">Effective Date: July 29, 2026</div>
+
+                <p>Daily Tracker ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how our application collects, uses, and safeguards your information when you use our mobile application.</p>
+
+                <h3>1. Information Collection and Use</h3>
+                <ul>
+                    <li><strong>Account Data:</strong> If you sign in via Google Sign-In or Supabase authentication, we store your email address and profile name securely to sync your goals, streaks, and focus records across devices.</li>
+                    <li><strong>Local Data:</strong> Your daily habits, expenses, focus goals, and tracker entries are saved locally on your device and synced with your account database securely.</li>
+                </ul>
+
+                <h3>2. Device Permissions & Usage Access</h3>
+                <ul>
+                    <li><strong>Usage Access (<code>PACKAGE_USAGE_STATS</code>):</strong> Our app requests Usage Access permission strictly to calculate daily screen time and track your focus hours. This data remains on your device and is never sold or shared with third parties.</li>
+                    <li><strong>Notifications:</strong> Used to deliver daily reminder alerts and streak notifications on your device.</li>
+                </ul>
+
+                <h3>3. Advertising & Analytics</h3>
+                <p>We display non-intrusive ads served by Google AdMob. AdMob may collect device identifiers (such as Advertising ID) to deliver relevant ads in compliance with Google's Privacy Policy.</p>
+                <p>Learn more: <a href="https://policies.google.com/privacy" target="_blank" style="color: #818cf8;">Google Privacy & Terms</a></p>
+
+                <h3>4. Children's Privacy</h3>
+                <p>Daily Tracker is not directed at children under the age of 13. We do not knowingly collect personal identifiable information from children under 13.</p>
+
+                <h3>5. Contact Us</h3>
+                <p>If you have any questions or suggestions regarding our Privacy Policy, please contact us at: <a href="mailto:support@dailytracker.app" style="color: #818cf8;">support@dailytracker.app</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Daily Tracker. All rights reserved. • <a href="#privacy">Privacy Policy</a> • <a href="app-ads.txt">app-ads.txt</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
