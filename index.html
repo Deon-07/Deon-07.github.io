@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daily Tracker - Habits, Focus & Expense Tracker</title>
-    <meta name="description" content="Take control of your daily routine with Daily Tracker. Build habits, maintain study focus streaks, track expenses, and reach your goals.">
+    <title>Deon Apps & Games - Mobile Apps & Puzzles</title>
+    <meta name="description" content="Explore top-quality Android mobile apps and puzzle games by Deon. Featuring Box Arrow POP! and Daily Tracker.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -13,6 +13,8 @@
             --primary: #6366f1;
             --primary-dark: #4f46e5;
             --primary-light: #818cf8;
+            --pink: #FF5D8F;
+            --pink-dark: #D83366;
             --secondary: #10b981;
             --amber: #f59e0b;
             --bg-gradient: radial-gradient(circle at 50% 0%, #1e1b4b 0%, #0f172a 60%, #090d16 100%);
@@ -39,20 +41,20 @@
         }
 
         .container {
-            max-width: 1100px;
+            max-width: 1140px;
             margin: 0 auto;
             padding: 0 24px;
         }
 
         /* Navbar */
         header {
-            padding: 24px 0;
+            padding: 20px 0;
             border-bottom: 1px solid rgba(255, 255, 255, 0.08);
             backdrop-filter: blur(12px);
             position: sticky;
             top: 0;
             z-index: 100;
-            background: rgba(15, 23, 42, 0.8);
+            background: rgba(15, 23, 42, 0.85);
         }
 
         .nav-container {
@@ -68,24 +70,26 @@
             text-decoration: none;
             color: var(--text-main);
             font-weight: 800;
-            font-size: 1.25rem;
+            font-size: 1.3rem;
+            letter-spacing: -0.01em;
         }
 
         .logo-icon {
             width: 40px;
             height: 40px;
             border-radius: 12px;
-            background: linear-gradient(135deg, #6366f1, #38bdf8);
+            background: linear-gradient(135deg, #FF5D8F, #6366f1);
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 4px 12px rgba(99, 102, 241, 0.4);
+            box-shadow: 0 4px 14px rgba(255, 93, 143, 0.4);
+            font-size: 1.2rem;
         }
 
         nav ul {
             display: flex;
             list-style: none;
-            gap: 28px;
+            gap: 24px;
             align-items: center;
         }
 
@@ -103,7 +107,7 @@
 
         /* Hero Section */
         .hero {
-            padding: 80px 0 60px;
+            padding: 80px 0 50px;
             text-align: center;
             position: relative;
         }
@@ -112,155 +116,291 @@
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            padding: 6px 16px;
+            padding: 6px 18px;
             border-radius: 999px;
-            background: rgba(99, 102, 241, 0.15);
-            border: 1px solid rgba(99, 102, 241, 0.3);
-            color: #a5b4fc;
+            background: rgba(255, 93, 143, 0.15);
+            border: 1px solid rgba(255, 93, 143, 0.3);
+            color: #ff94b8;
             font-size: 0.85rem;
             font-weight: 700;
             margin-bottom: 24px;
         }
 
         h1 {
-            font-size: 3.5rem;
+            font-size: 3.4rem;
             font-weight: 800;
             letter-spacing: -0.02em;
             line-height: 1.15;
             margin-bottom: 20px;
-            background: linear-gradient(to right, #ffffff, #c7d2fe, #38bdf8);
+            background: linear-gradient(to right, #ffffff, #ffd2e0, #c7d2fe, #38bdf8);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
         .hero p {
-            font-size: 1.25rem;
+            font-size: 1.2rem;
             color: var(--text-muted);
-            max-width: 680px;
+            max-width: 720px;
             margin: 0 auto 36px;
         }
 
-        .cta-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 12px;
-            background: linear-gradient(135deg, #4f46e5, #6366f1);
-            color: white;
-            padding: 16px 32px;
-            border-radius: 16px;
-            font-weight: 700;
-            font-size: 1.1rem;
-            text-decoration: none;
-            box-shadow: 0 10px 25px -5px rgba(99, 102, 241, 0.5);
-            transition: transform 0.2s, box-shadow 0.2s;
+        /* Featured Apps Showcase Grid */
+        .showcase-section {
+            padding: 40px 0 80px;
         }
 
-        .cta-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 15px 30px -5px rgba(99, 102, 241, 0.6);
-        }
-
-        /* Features Section */
-        .features {
-            padding: 80px 0;
-        }
-
-        .section-title {
+        .section-header {
             text-align: center;
             margin-bottom: 48px;
         }
 
-        .section-title h2 {
-            font-size: 2.25rem;
+        .section-header h2 {
+            font-size: 2.2rem;
             font-weight: 800;
             margin-bottom: 12px;
         }
 
-        .grid {
+        .apps-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 24px;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 32px;
         }
 
-        .card {
+        .app-card {
             background: var(--card-bg);
             border: 1px solid var(--card-border);
-            border-radius: 24px;
-            padding: 32px 24px;
+            border-radius: 28px;
+            padding: 36px 30px;
             backdrop-filter: blur(16px);
-            transition: transform 0.2s, border-color 0.2s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
         }
 
-        .card:hover {
-            transform: translateY(-4px);
-            border-color: rgba(99, 102, 241, 0.4);
+        .app-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.5);
         }
 
-        .card-icon {
-            width: 48px;
-            height: 48px;
-            border-radius: 14px;
+        .app-card.arrow-card {
+            border-color: rgba(255, 93, 143, 0.3);
+        }
+
+        .app-card.arrow-card:hover {
+            border-color: rgba(255, 93, 143, 0.6);
+            box-shadow: 0 20px 40px -15px rgba(255, 93, 143, 0.3);
+        }
+
+        .app-card.tracker-card {
+            border-color: rgba(99, 102, 241, 0.3);
+        }
+
+        .app-card.tracker-card:hover {
+            border-color: rgba(99, 102, 241, 0.6);
+            box-shadow: 0 20px 40px -15px rgba(99, 102, 241, 0.3);
+        }
+
+        .app-top {
             display: flex;
             align-items: center;
-            justify-content: center;
+            gap: 20px;
             margin-bottom: 20px;
+        }
+
+        .app-icon {
+            width: 72px;
+            height: 72px;
+            border-radius: 18px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+
+        .app-title-group h3 {
             font-size: 1.5rem;
+            font-weight: 800;
+            color: #ffffff;
+            margin-bottom: 4px;
         }
 
-        .card h3 {
-            font-size: 1.25rem;
+        .app-tagline {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+
+        .tag-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 18px;
+        }
+
+        .tag {
+            font-size: 0.75rem;
             font-weight: 700;
-            margin-bottom: 10px;
+            padding: 4px 10px;
+            border-radius: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
         }
 
-        .card p {
-            color: var(--text-muted);
-            font-size: 0.95rem;
-            line-height: 1.5;
+        .tag-pink {
+            background: rgba(255, 93, 143, 0.15);
+            color: #ff85ab;
+            border: 1px solid rgba(255, 93, 143, 0.3);
         }
 
-        /* Privacy Policy Section */
-        .privacy-section {
-            padding: 80px 0;
-            border-top: 1px solid rgba(255, 255, 255, 0.08);
+        .tag-indigo {
+            background: rgba(99, 102, 241, 0.15);
+            color: #a5b4fc;
+            border: 1px solid rgba(99, 102, 241, 0.3);
         }
 
-        .policy-card {
-            background: rgba(15, 23, 42, 0.7);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 24px;
-            padding: 40px;
+        .tag-green {
+            background: rgba(16, 185, 129, 0.15);
+            color: #6ee7b7;
+            border: 1px solid rgba(16, 185, 129, 0.3);
         }
 
-        .policy-card h2 {
-            font-size: 1.8rem;
-            margin-bottom: 8px;
-        }
-
-        .policy-card .date {
-            color: var(--text-muted);
-            font-size: 0.85rem;
+        .app-desc {
+            color: #cbd5e1;
+            font-size: 0.96rem;
+            line-height: 1.6;
             margin-bottom: 24px;
         }
 
-        .policy-card h3 {
-            font-size: 1.2rem;
-            color: #a5b4fc;
-            margin: 24px 0 8px;
+        .features-list {
+            list-style: none;
+            margin-bottom: 28px;
         }
 
-        .policy-card p, .policy-card ul {
+        .features-list li {
+            font-size: 0.9rem;
             color: var(--text-muted);
-            font-size: 0.95rem;
-            margin-bottom: 14px;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
 
-        .policy-card ul {
-            padding-left: 24px;
+        .features-list li span {
+            color: #38bdf8;
         }
 
-        .policy-card li {
-            margin-bottom: 6px;
+        .btn-group {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: auto;
+        }
+
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            color: white;
+            padding: 14px 24px;
+            border-radius: 14px;
+            font-weight: 700;
+            font-size: 1rem;
+            text-decoration: none;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .btn-pink {
+            background: linear-gradient(135deg, #FF5D8F, #D83366);
+            box-shadow: 0 8px 20px -4px rgba(255, 93, 143, 0.5);
+        }
+
+        .btn-pink:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 25px -4px rgba(255, 93, 143, 0.6);
+        }
+
+        .btn-indigo {
+            background: linear-gradient(135deg, #4f46e5, #6366f1);
+            box-shadow: 0 8px 20px -4px rgba(99, 102, 241, 0.5);
+        }
+
+        .btn-indigo:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 25px -4px rgba(99, 102, 241, 0.6);
+        }
+
+        .btn-secondary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            color: var(--text-main);
+            padding: 12px 20px;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-decoration: none;
+            transition: background 0.2s, border-color 0.2s;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+
+        /* Policy quick access hub */
+        .policy-hub {
+            padding: 60px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            background: rgba(15, 23, 42, 0.5);
+        }
+
+        .policy-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .policy-item {
+            background: rgba(30, 41, 59, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .policy-item h4 {
+            font-size: 1.15rem;
+            margin-bottom: 8px;
+            color: #ffffff;
+        }
+
+        .policy-item p {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            margin-bottom: 16px;
+        }
+
+        .policy-item a {
+            color: var(--primary-light);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .policy-item a:hover {
+            text-decoration: underline;
         }
 
         /* Footer */
@@ -277,31 +417,31 @@
             text-decoration: none;
         }
 
+        footer a:hover {
+            text-decoration: underline;
+        }
+
         @media (max-width: 768px) {
-            h1 { font-size: 2.5rem; }
+            h1 { font-size: 2.4rem; }
             .hero p { font-size: 1.05rem; }
+            .nav-container { flex-direction: column; gap: 16px; }
             nav ul { gap: 16px; }
-            .policy-card { padding: 24px; }
         }
     </style>
 </head>
 <body>
 
-    <!-- Header -->
+    <!-- Header / Navbar -->
     <header>
         <div class="container nav-container">
             <a href="#" class="logo">
-                <div class="logo-icon">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
-                    </svg>
-                </div>
-                Daily Tracker
+                <div class="logo-icon">🎮</div>
+                Deon Apps & Games
             </a>
             <nav>
                 <ul>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#privacy">Privacy Policy</a></li>
+                    <li><a href="#apps">Our Apps</a></li>
+                    <li><a href="#policies">Privacy Policies</a></li>
                     <li><a href="app-ads.txt" target="_blank">app-ads.txt</a></li>
                 </ul>
             </nav>
@@ -312,81 +452,145 @@
     <section class="hero">
         <div class="container">
             <div class="badge">
-                <span>✨ Built for Consistency & Success</span>
+                <span>🚀 Independent Android Developer Studio</span>
             </div>
-            <h1>Track Habits, Master Focus & Manage Expenses</h1>
-            <p>The all-in-one productivity companion. Build unbroken study streaks, track your daily budget, and unlock your true potential.</p>
-            <a href="https://play.google.com/store/apps/details?id=com.dailytracker.habits.streak" target="_blank" class="cta-btn">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M3.609 1.814L13.792 12 3.61 22.186a1.44 1.44 0 0 1-.227-.791V2.605c0-.285.08-.558.226-.791zm11.233 11.234l2.584 2.583-12.012 6.899 9.428-9.482zm0-2.096L5.414 1.47l12.012 6.898-2.584 2.584zm1.464 1.464l3.195 1.834c.883.507.883 1.334 0 1.841l-3.195 1.834-2.128-2.128 2.128-2.128z"/>
-                </svg>
-                Get it on Google Play
-            </a>
+            <h1>Crafting Engaging Games & Productivity Apps</h1>
+            <p>Thoughtfully engineered with Jetpack Compose and modern Kotlin for smooth performance, beautiful aesthetics, and delightful user experiences.</p>
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section class="features" id="features">
+    <!-- Apps Showcase Section -->
+    <section class="showcase-section" id="apps">
         <div class="container">
-            <div class="section-title">
-                <h2>Designed for High Achievers</h2>
-                <p style="color: var(--text-muted);">Everything you need to organize your daily routine in one unified app.</p>
+            <div class="section-header">
+                <h2>Featured Titles</h2>
+                <p style="color: var(--text-muted);">Explore our games and daily utilities available on Android.</p>
             </div>
-            <div class="grid">
-                <div class="card">
-                    <div class="card-icon" style="background: rgba(99, 102, 241, 0.2); color: #818cf8;">🔥</div>
-                    <h3>Habit & Streak Counters</h3>
-                    <p>Build lasting habits with visual streaks, milestones, and celebration badges that keep you motivated daily.</p>
+
+            <div class="apps-grid">
+
+                <!-- 1. Box Arrow POP! -->
+                <div class="app-card arrow-card">
+                    <div>
+                        <div class="app-top">
+                            <img src="box-arrow-pop-icon.png" alt="Box Arrow POP! Icon" class="app-icon" onerror="this.src='box-arrow-pop-icon.png'">
+                            <div class="app-title-group">
+                                <h3>Box Arrow POP!</h3>
+                                <div class="app-tagline">Tactical Arrow Puzzle Game</div>
+                            </div>
+                        </div>
+
+                        <div class="tag-row">
+                            <span class="tag tag-pink">New Release</span>
+                            <span class="tag tag-indigo">Puzzle</span>
+                            <span class="tag tag-green">600 Levels</span>
+                        </div>
+
+                        <p class="app-desc">
+                            A tactile, brain-teasing arrow puzzle game. Tap directional arrows to launch them off the grid when their path is clear. Master ice thaw mechanics, double splits, armored shields, linked twin pairs, and teleporting portals!
+                        </p>
+
+                        <ul class="features-list">
+                            <li><span>✓</span> 600 hand-tuned procedural levels across 60 worlds</li>
+                            <li><span>✓</span> 6 unique mechanics: Frozen, Double, Armored, Linked & Portals</li>
+                            <li><span>✓</span> Satisfying "toy sticker" aesthetic & dynamic audio chords</li>
+                            <li><span>✓</span> 100% deterministic & guaranteed solvable</li>
+                        </ul>
+                    </div>
+
+                    <div class="btn-group">
+                        <a href="https://play.google.com/store/apps/details?id=com.boxarrowpop.game" target="_blank" class="btn-primary btn-pink">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M3.609 1.814L13.792 12 3.61 22.186a1.44 1.44 0 0 1-.227-.791V2.605c0-.285.08-.558.226-.791zm11.233 11.234l2.584 2.583-12.012 6.899 9.428-9.482zm0-2.096L5.414 1.47l12.012 6.898-2.584 2.584zm1.464 1.464l3.195 1.834c.883.507.883 1.334 0 1.841l-3.195 1.834-2.128-2.128 2.128-2.128z"/>
+                            </svg>
+                            Get on Google Play
+                        </a>
+                        <a href="box-arrow-pop-privacy.html" class="btn-secondary">
+                            📄 Privacy Policy
+                        </a>
+                    </div>
                 </div>
-                <div class="card">
-                    <div class="card-icon" style="background: rgba(16, 185, 129, 0.2); color: #34d399;">⏱️</div>
-                    <h3>Focus & Study Timer</h3>
-                    <p>Integrated study timer with dual-color Study vs Break analytics to master your time and balance sessions.</p>
+
+                <!-- 2. Daily Tracker -->
+                <div class="app-card tracker-card">
+                    <div>
+                        <div class="app-top">
+                            <div class="app-icon" style="background: linear-gradient(135deg, #6366f1, #38bdf8); display: flex; align-items: center; justify-content: center; font-size: 2rem;">
+                                ⏱️
+                            </div>
+                            <div class="app-title-group">
+                                <h3>Daily Tracker</h3>
+                                <div class="app-tagline">Habits, Focus & Expense Tracker</div>
+                            </div>
+                        </div>
+
+                        <div class="tag-row">
+                            <span class="tag tag-indigo">Productivity</span>
+                            <span class="tag tag-green">Habit Streaks</span>
+                            <span class="tag tag-pink">Finance</span>
+                        </div>
+
+                        <p class="app-desc">
+                            The all-in-one productivity companion. Build unbroken study streaks, track your daily budget, manage focus sessions with Study vs Break timers, and visualize your progress with activity heatmaps.
+                        </p>
+
+                        <ul class="features-list">
+                            <li><span>✓</span> Visual habit streaks, milestones & celebration badges</li>
+                            <li><span>✓</span> Dual-color Study vs Break focus timer analytics</li>
+                            <li><span>✓</span> Quick expense tracker with daily spending limits</li>
+                            <li><span>✓</span> Yearly progress heatmaps & monthly breakdown graphs</li>
+                        </ul>
+                    </div>
+
+                    <div class="btn-group">
+                        <a href="https://play.google.com/store/apps/details?id=com.dailytracker.habits.streak" target="_blank" class="btn-primary btn-indigo">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M3.609 1.814L13.792 12 3.61 22.186a1.44 1.44 0 0 1-.227-.791V2.605c0-.285.08-.558.226-.791zm11.233 11.234l2.584 2.583-12.012 6.899 9.428-9.482zm0-2.096L5.414 1.47l12.012 6.898-2.584 2.584zm1.464 1.464l3.195 1.834c.883.507.883 1.334 0 1.841l-3.195 1.834-2.128-2.128 2.128-2.128z"/>
+                            </svg>
+                            Get on Google Play
+                        </a>
+                        <a href="privacy.html" class="btn-secondary">
+                            📄 Privacy Policy
+                        </a>
+                    </div>
                 </div>
-                <div class="card">
-                    <div class="card-icon" style="background: rgba(245, 158, 11, 0.2); color: #fbbf24;">💰</div>
-                    <h3>Smart Expense Tracker</h3>
-                    <p>Log transactions in seconds, monitor daily spending limits, and categorize expenses with intuitive charts.</p>
-                </div>
-                <div class="card">
-                    <div class="card-icon" style="background: rgba(56, 189, 248, 0.2); color: #38bdf8;">📊</div>
-                    <h3>Visual Analytics & Heatmap</h3>
-                    <p>Track your yearly progress with comprehensive monthly activity heatmaps and detailed breakdown graphs.</p>
-                </div>
+
             </div>
         </div>
     </section>
 
-    <!-- Privacy Policy Section -->
-    <section class="privacy-section" id="privacy">
+    <!-- Privacy & Developer Policies Hub -->
+    <section class="policy-hub" id="policies">
         <div class="container">
-            <div class="policy-card">
-                <h2>Privacy Policy for Daily Tracker</h2>
-                <div class="date">Effective Date: July 29, 2026</div>
+            <div class="section-header">
+                <h2>Privacy & Compliance Hub</h2>
+                <p style="color: var(--text-muted);">Transparent, privacy-first disclosures for all our mobile applications.</p>
+            </div>
 
-                <p>Daily Tracker ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how our application collects, uses, and safeguards your information when you use our mobile application.</p>
+            <div class="policy-grid">
+                <div class="policy-item">
+                    <div>
+                        <h4>Box Arrow POP!</h4>
+                        <p>Package: <code>com.boxarrowpop.game</code> &bull; Explains AdMob ad data, local save game storage, and children's privacy.</p>
+                    </div>
+                    <a href="box-arrow-pop-privacy.html">Read Policy &rarr;</a>
+                </div>
 
-                <h3>1. Information Collection and Use</h3>
-                <ul>
-                    <li><strong>Account Data:</strong> If you sign in via Google Sign-In or Supabase authentication, we store your email address and profile name securely to sync your goals, streaks, and focus records across devices.</li>
-                    <li><strong>Local Data:</strong> Your daily habits, expenses, focus goals, and tracker entries are saved locally on your device and synced with your account database securely.</li>
-                </ul>
+                <div class="policy-item">
+                    <div>
+                        <h4>Daily Tracker</h4>
+                        <p>Package: <code>com.dailytracker.habits.streak</code> &bull; Details usage stats, local sync, and habit tracker data protection.</p>
+                    </div>
+                    <a href="privacy.html">Read Policy &rarr;</a>
+                </div>
 
-                <h3>2. Device Permissions & Usage Access</h3>
-                <ul>
-                    <li><strong>Usage Access (<code>PACKAGE_USAGE_STATS</code>):</strong> Our app requests Usage Access permission strictly to calculate daily screen time and track your focus hours. This data remains on your device and is never sold or shared with third parties.</li>
-                    <li><strong>Notifications:</strong> Used to deliver daily reminder alerts and streak notifications on your device.</li>
-                </ul>
-
-                <h3>3. Advertising & Analytics</h3>
-                <p>We display non-intrusive ads served by Google AdMob. AdMob may collect device identifiers (such as Advertising ID) to deliver relevant ads in compliance with Google's Privacy Policy.</p>
-                <p>Learn more: <a href="https://policies.google.com/privacy" target="_blank" style="color: #818cf8;">Google Privacy & Terms</a></p>
-
-                <h3>4. Children's Privacy</h3>
-                <p>Daily Tracker is not directed at children under the age of 13. We do not knowingly collect personal identifiable information from children under 13.</p>
-
-                <h3>5. Contact Us</h3>
-                <p>If you have any questions or suggestions regarding our Privacy Policy, please contact us at: <a href="mailto:support@dailytracker.app" style="color: #818cf8;">support@dailytracker.app</a></p>
+                <div class="policy-item">
+                    <div>
+                        <h4>AdMob Verification (app-ads.txt)</h4>
+                        <p>Official IAB authorized digital sellers file for Google AdMob publisher verification.</p>
+                    </div>
+                    <a href="app-ads.txt" target="_blank">View app-ads.txt &rarr;</a>
+                </div>
             </div>
         </div>
     </section>
@@ -394,7 +598,13 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2026 Daily Tracker. All rights reserved. • <a href="#privacy">Privacy Policy</a> • <a href="app-ads.txt">app-ads.txt</a></p>
+            <p>&copy; 2026 Deon Apps & Games. All rights reserved.</p>
+            <p style="margin-top: 8px; font-size: 0.85rem;">
+                <a href="box-arrow-pop-privacy.html">Box Arrow POP! Privacy</a> &bull; 
+                <a href="privacy.html">Daily Tracker Privacy</a> &bull; 
+                <a href="app-ads.txt">app-ads.txt</a> &bull; 
+                <a href="https://github.com/Deon-07" target="_blank">GitHub</a>
+            </p>
         </div>
     </footer>
 
