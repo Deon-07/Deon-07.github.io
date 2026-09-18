@@ -194,6 +194,15 @@
             box-shadow: 0 20px 40px -15px rgba(255, 93, 143, 0.3);
         }
 
+        .app-card.bubblino-card {
+            border-color: rgba(255, 82, 119, 0.3);
+        }
+
+        .app-card.bubblino-card:hover {
+            border-color: rgba(255, 82, 119, 0.6);
+            box-shadow: 0 20px 40px -15px rgba(255, 82, 119, 0.3);
+        }
+
         .app-card.tracker-card {
             border-color: rgba(99, 102, 241, 0.3);
         }
@@ -469,7 +478,49 @@
 
             <div class="apps-grid">
 
-                <!-- 1. Box Arrow POP! -->
+                <!-- 1. Bubblino: Bubble Pop Shooter -->
+                <div class="app-card bubblino-card">
+                    <div>
+                        <div class="app-top">
+                            <img src="bubblino-icon.png" alt="Bubblino Icon" class="app-icon" onerror="this.src='bubblino-icon.png'">
+                            <div class="app-title-group">
+                                <h3>Bubblino</h3>
+                                <div class="app-tagline">Bubble Pop Shooter & Puzzle</div>
+                            </div>
+                        </div>
+
+                        <div class="tag-row">
+                            <span class="tag tag-pink">New Release</span>
+                            <span class="tag tag-indigo">Match 3</span>
+                            <span class="tag tag-green">Arcade Pop</span>
+                        </div>
+
+                        <p class="app-desc">
+                            A charming, vibrant bubble-popping puzzle adventure! Aim, match 3+ living bubbles, trigger explosive Bomb & Rainbow combos, and explore magical sky worlds with Bubblino.
+                        </p>
+
+                        <ul class="features-list">
+                            <li><span>✓</span> Classic Match-3 Bubble Shooting with juicy, satisfying physics</li>
+                            <li><span>✓</span> Power-ups: Bomb Bubbles, Rainbow Prisms & Laser Blasts</li>
+                            <li><span>✓</span> Daily gift wheels, booster rewards & infinite lives</li>
+                            <li><span>✓</span> 100% offline friendly & smooth 60 FPS gameplay</li>
+                        </ul>
+                    </div>
+
+                    <div class="btn-group">
+                        <a href="https://play.google.com/store/apps/details?id=com.bubblino.game" target="_blank" class="btn-primary btn-pink">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M3.609 1.814L13.792 12 3.61 22.186a1.44 1.44 0 0 1-.227-.791V2.605c0-.285.08-.558.226-.791zm11.233 11.234l2.584 2.583-12.012 6.899 9.428-9.482zm0-2.096L5.414 1.47l12.012 6.898-2.584 2.584zm1.464 1.464l3.195 1.834c.883.507.883 1.334 0 1.841l-3.195 1.834-2.128-2.128 2.128-2.128z"/>
+                            </svg>
+                            Get on Google Play
+                        </a>
+                        <a href="bubblino-privacy.html" class="btn-secondary">
+                            📄 Privacy Policy
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 2. Box Arrow POP! -->
                 <div class="app-card arrow-card">
                     <div>
                         <div class="app-top">
@@ -511,7 +562,7 @@
                     </div>
                 </div>
 
-                <!-- 2. Daily Tracker -->
+                <!-- 3. Daily Tracker -->
                 <div class="app-card tracker-card">
                     <div>
                         <div class="app-top">
@@ -570,6 +621,14 @@
             <div class="policy-grid">
                 <div class="policy-item">
                     <div>
+                        <h4>Bubblino</h4>
+                        <p>Package: <code>com.bubblino.game</code> &bull; Explains ironSource & Unity Ads mediation, local save storage, and child safety.</p>
+                    </div>
+                    <a href="bubblino-privacy.html">Read Policy &rarr;</a>
+                </div>
+
+                <div class="policy-item">
+                    <div>
                         <h4>Box Arrow POP!</h4>
                         <p>Package: <code>com.boxarrowpop.game</code> &bull; Explains AdMob ad data, local save game storage, and children's privacy.</p>
                     </div>
@@ -600,6 +659,7 @@
         <div class="container">
             <p>&copy; 2026 Deon Apps & Games. All rights reserved.</p>
             <p style="margin-top: 8px; font-size: 0.85rem;">
+                <a href="bubblino-privacy.html">Bubblino Privacy</a> &bull; 
                 <a href="box-arrow-pop-privacy.html">Box Arrow POP! Privacy</a> &bull; 
                 <a href="privacy.html">Daily Tracker Privacy</a> &bull; 
                 <a href="app-ads.txt">app-ads.txt</a> &bull; 
