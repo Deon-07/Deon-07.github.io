@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Water Ball: Merge Game</title>
+  <meta name="description" content="Official publication-ready Privacy Policy for Water Ball: Merge Game (com.water.ball.merge.game) on Android, iOS, and Web.">
+  <meta name="author" content="Water Ball Merge Development Team">
+  <meta name="robots" content="index, follow">
+  <style>
+    :root {
+      --primary-color: #0284c7;
+      --primary-hover: #0369a1;
+      --primary-light: #e0f2fe;
+      --text-main: #1e293b;
+      --text-muted: #64748b;
+      --text-light: #94a3b8;
+      --bg-body: #f8fafc;
+      --bg-card: #ffffff;
+      --border-color: #e2e8f0;
+      --border-dark: #cbd5e1;
+      --warning-bg: #fffbeb;
+      --warning-border: #f59e0b;
+      --warning-text: #92400e;
+      --callout-bg: #f0fdf4;
+      --callout-border: #22c55e;
+      --callout-text: #166534;
+      --info-bg: #f0f9ff;
+      --info-border: #0284c7;
+      --font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+      --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+      --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 14px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: var(--font-stack);
+      line-height: 1.75;
+      color: var(--text-main);
+      background-color: var(--bg-body);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 5rem 1.5rem;
+    }
+
+    /* Top Utility Bar */
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 2rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .brand-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--primary-color);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .doc-links {
+      display: flex;
+      gap: 0.75rem;
+      align-items: center;
+    }
+
+    .doc-link-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.45rem 0.9rem;
+      border-radius: var(--radius-sm);
+      font-size: 0.875rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    .doc-link-btn.active {
+      background-color: var(--primary-color);
+      color: #ffffff;
+    }
+
+    .doc-link-btn.secondary {
+      background-color: #ffffff;
+      color: var(--text-main);
+      border: 1px solid var(--border-dark);
+    }
+
+    .doc-link-btn.secondary:hover {
+      background-color: var(--primary-light);
+      border-color: var(--primary-color);
+      color: var(--primary-hover);
+    }
+
+    /* Header Card */
+    header.header-card {
+      background: var(--bg-card);
+      border-radius: var(--radius-lg);
+      padding: 2.5rem 2rem;
+      margin-bottom: 2rem;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border-color);
+    }
+
+    h1.doc-title {
+      font-size: 2.25rem;
+      font-weight: 800;
+      color: #0f172a;
+      line-height: 1.25;
+      margin-bottom: 0.75rem;
+      letter-spacing: -0.025em;
+    }
+
+    .meta-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 0.75rem 1.5rem;
+      margin-top: 1.25rem;
+      padding-top: 1.25rem;
+      border-top: 1px dashed var(--border-color);
+      font-size: 0.875rem;
+      color: var(--text-muted);
+    }
+
+    .meta-item strong {
+      color: var(--text-main);
+    }
+
+    /* High-Priority Warning Banner */
+    .warning-banner {
+      background-color: var(--warning-bg);
+      border: 2px solid var(--warning-border);
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+      margin-bottom: 2.5rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .warning-banner-header {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--warning-text);
+      margin-bottom: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.025em;
+    }
+
+    .warning-banner p {
+      color: #78350f;
+      font-size: 0.95rem;
+      line-height: 1.65;
+    }
+
+    .warning-banner p + p {
+      margin-top: 0.5rem;
+    }
+
+    /* Sticky Navigation Table of Contents */
+    nav.toc-wrapper {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 1.5rem 1.75rem;
+      margin-bottom: 2.5rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    nav.toc-wrapper h2 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .toc-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 0.5rem 1.25rem;
+      list-style: none;
+    }
+
+    .toc-grid a {
+      font-size: 0.9rem;
+      color: var(--primary-color);
+      text-decoration: none;
+      display: inline-block;
+      padding: 0.2rem 0;
+      transition: color 0.15s ease, transform 0.15s ease;
+    }
+
+    .toc-grid a:hover {
+      color: var(--primary-hover);
+      text-decoration: underline;
+      transform: translateX(2px);
+    }
+
+    /* Content Layout */
+    main.policy-content {
+      background: var(--bg-card);
+      border-radius: var(--radius-lg);
+      padding: 3rem 2.5rem;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border-color);
+    }
+
+    section.policy-section {
+      margin-bottom: 3rem;
+      scroll-margin-top: 2rem;
+    }
+
+    section.policy-section:last-of-type {
+      margin-bottom: 1rem;
+    }
+
+    h2.section-heading {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #0f172a;
+      padding-bottom: 0.75rem;
+      margin-bottom: 1.25rem;
+      border-bottom: 2px solid #f1f5f9;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    h3.sub-heading {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #1e293b;
+      margin-top: 1.75rem;
+      margin-bottom: 0.75rem;
+    }
+
+    p {
+      margin-bottom: 1.15rem;
+      color: #334155;
+    }
+
+    ul, ol {
+      margin-left: 1.5rem;
+      margin-bottom: 1.25rem;
+      color: #334155;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    li strong {
+      color: #0f172a;
+    }
+
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.88em;
+      background-color: #f1f5f9;
+      color: #0f172a;
+      padding: 0.15em 0.35em;
+      border-radius: 4px;
+      border: 1px solid #e2e8f0;
+    }
+
+    /* Plain-Language Callout Boxes */
+    .callout-summary {
+      background-color: var(--callout-bg);
+      border-left: 4px solid var(--callout-border);
+      border-radius: var(--radius-sm);
+      padding: 1.15rem 1.4rem;
+      margin: 1.25rem 0 1.75rem 0;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .callout-summary.info-accent {
+      background-color: var(--info-bg);
+      border-left-color: var(--info-border);
+    }
+
+    .callout-title {
+      font-weight: 700;
+      font-size: 0.98rem;
+      color: var(--callout-text);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+      letter-spacing: 0.025em;
+    }
+
+    .callout-summary.info-accent .callout-title {
+      color: #075985;
+    }
+
+    .callout-summary p {
+      color: #14532d;
+      font-size: 0.925rem;
+      line-height: 1.6;
+      margin-bottom: 0;
+    }
+
+    .callout-summary.info-accent p {
+      color: #0c4a6e;
+    }
+
+    /* Table Styling */
+    .table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin: 1.5rem 0 2rem 0;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-sm);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+      text-align: left;
+      background: #ffffff;
+    }
+
+    th {
+      background-color: #f8fafc;
+      color: #0f172a;
+      font-weight: 700;
+      padding: 0.85rem 1rem;
+      border-bottom: 2px solid var(--border-color);
+      white-space: nowrap;
+    }
+
+    td {
+      padding: 0.85rem 1rem;
+      border-bottom: 1px solid var(--border-color);
+      color: #334155;
+      vertical-align: top;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    tr:nth-child(even) td {
+      background-color: #fafbfc;
+    }
+
+    /* Links */
+    a {
+      color: var(--primary-color);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+      transition: color 0.15s ease;
+    }
+
+    a:hover {
+      color: var(--primary-hover);
+    }
+
+    /* Footer */
+    footer.doc-footer {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border-color);
+      text-align: center;
+      font-size: 0.875rem;
+      color: var(--text-muted);
+    }
+
+    .back-to-top {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      margin-top: 1rem;
+      font-size: 0.875rem;
+      font-weight: 600;
+      text-decoration: none;
+      color: var(--primary-color);
+    }
+
+    /* Print Stylesheet */
+    @media print {
+      body {
+        background: #ffffff;
+        color: #000000;
+        font-size: 11pt;
+        line-height: 1.5;
+      }
+
+      .container {
+        max-width: 100%;
+        padding: 0;
+      }
+
+      .top-bar,
+      nav.toc-wrapper,
+      .back-to-top,
+      .doc-link-btn {
+        display: none !important;
+      }
+
+      header.header-card,
+      main.policy-content {
+        box-shadow: none !important;
+        border: none !important;
+        padding: 0 !important;
+        background: transparent !important;
+      }
+
+      section.policy-section {
+        page-break-inside: auto;
+      }
+
+      h1, h2, h3 {
+        page-break-after: avoid;
+      }
+
+      .warning-banner,
+      .callout-summary,
+      .table-container {
+        page-break-inside: avoid;
+        border: 1pt solid #666666 !important;
+        box-shadow: none !important;
+      }
+
+      a {
+        text-decoration: none;
+        color: #000000;
+      }
+
+      a[href^="http"]:after {
+        content: " (" attr(href) ")";
+        font-size: 9pt;
+        color: #555555;
+      }
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .container {
+        padding: 1.25rem 0.75rem 3rem 0.75rem;
+      }
+
+      header.header-card {
+        padding: 1.75rem 1.25rem;
+      }
+
+      main.policy-content {
+        padding: 1.75rem 1.25rem;
+      }
+
+      h1.doc-title {
+        font-size: 1.85rem;
+      }
+
+      h2.section-heading {
+        font-size: 1.35rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Top Utility Bar -->
+    <div class="top-bar" role="navigation" aria-label="Document Navigation">
+      <div class="brand-title">
+        <span>🎮</span>
+        <span>Water Ball: Merge Game</span>
+      </div>
+      <div class="doc-links">
+        <a href="privacy_policy.html" class="doc-link-btn active" aria-current="page">Privacy Policy</a>
+        <a href="terms_and_conditions.html" class="doc-link-btn secondary">Terms &amp; Conditions</a>
+      </div>
+    </div>
+
+    <!-- Header Card -->
+    <header class="header-card" role="banner">
+      <h1 class="doc-title">Privacy Policy</h1>
+      <p style="color: var(--text-muted); font-size: 1.05rem; margin-bottom: 0;">Official Global Legal &amp; Data Protection Disclosure</p>
+      
+      <div class="meta-grid">
+        <div class="meta-item"><strong>Effective Date:</strong> October 5, 2026</div>
+        <div class="meta-item"><strong>Last Updated:</strong> October 5, 2026</div>
+        <div class="meta-item"><strong>Package ID:</strong> <code>com.water.ball.merge.game</code></div>
+        <div class="meta-item"><strong>Engine:</strong> Godot Engine 4.7.1.stable</div>
+        <div class="meta-item"><strong>Platforms:</strong> Android, iOS, Web (HTML5)</div>
+        <div class="meta-item"><strong>Developer:</strong> Water Ball Merge Studio</div>
+      </div>
+    </header>
+
+    <!-- Prominent Warning Banner -->
+    <aside class="warning-banner" role="alert" aria-label="Important Legal Notice on Virtual Currencies">
+      <div class="warning-banner-header">
+        <span>⚠️</span>
+        <span>Important Notice: 100% Fictional Virtual Currency &amp; Simulated Wallet</span>
+      </div>
+      <p><strong>Zero Real-World Value:</strong> All in-game coins, dollars ($), gems, scores, and balances in <em>Water Ball: Merge Game</em> are <strong>100% fictional virtual entertainment points</strong>. They possess <strong>$0.00 cash value</strong> and cannot be redeemed, transferred, or exchanged for real-world legal tender, fiat currency, cryptocurrency, gift cards, or physical goods.</p>
+      <p><strong>Simulated Wallet Address:</strong> Any cryptocurrency wallet address entered on the profile screen is stored strictly as a narrative milestone for an in-game simulated progression quest. It is <strong>never connected to any blockchain, network node, or financial institution</strong>. Completing the 48-hour simulated countdown awards purely digital in-game perks (30 days ad-free play, 2X VIP pass, and 100 game power-ups) with zero external monetary disbursement.</p>
+    </aside>
+
+    <!-- Navigation Table of Contents -->
+    <nav class="toc-wrapper" aria-label="Table of Contents">
+      <h2><span>📋</span> Table of Contents</h2>
+      <ul class="toc-grid">
+        <li><a href="#section-1">1. Introduction and Scope</a></li>
+        <li><a href="#section-2">2. Virtual Economy &amp; Simulated Wallet</a></li>
+        <li><a href="#section-3">3. Data We Collect and How We Collect It</a></li>
+        <li><a href="#section-4">4. Purposes &amp; Legal Bases (GDPR Art. 6)</a></li>
+        <li><a href="#section-5">5. Third-Party Integrations &amp; Ad Networks</a></li>
+        <li><a href="#section-6">6. Storage, Retention &amp; Security</a></li>
+        <li><a href="#section-7">7. User Rights &amp; Deletion Protocol</a></li>
+        <li><a href="#section-8">8. California Privacy Rights (CCPA / CPRA)</a></li>
+        <li><a href="#section-9">9. Children's Privacy (COPPA)</a></li>
+        <li><a href="#section-10">10. Device Permissions &amp; Hardware Access</a></li>
+        <li><a href="#section-11">11. Amendments &amp; Policy Updates</a></li>
+        <li><a href="#section-12">12. Contact Information &amp; DPO Inquiries</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="policy-content" role="main">
+
+      <!-- Section 1 -->
+      <section id="section-1" class="policy-section">
+        <h2 class="section-heading">1. Introduction and Scope</h2>
+        <div class="callout-summary">
+          <div class="callout-title"><span>📌</span> Plain-Language Summary</div>
+          <p>This Privacy Policy explains what information <strong>Water Ball: Merge Game</strong> collects, how it is used, and what rights you have over your personal data. We provide anonymous guest play by default, but we collect basic device and gameplay data to support cloud saves, anti-cheat features, and ads that keep the game free.</p>
+        </div>
+        <p>Welcome to <strong>Water Ball: Merge Game</strong> ("the Game", "the Application", "we", "us", or "our"). This Privacy Policy applies to all users ("you" or "User") who download, install, access, or play <em>Water Ball: Merge Game</em> on mobile (Android/iOS) or web platforms.</p>
+        <p>This document governs our collection, storage, processing, and protection of your personal information, technical identifiers, and gameplay metrics in compliance with international privacy legislation, including the <strong>General Data Protection Regulation (GDPR / UK GDPR)</strong>, the <strong>California Consumer Privacy Act (CCPA / CPRA)</strong>, the <strong>Children's Online Privacy Protection Act (COPPA)</strong>, and Google Play Store Console Developer Policies.</p>
+        <p>By installing or playing the Game, you acknowledge that you have read and understood this Privacy Policy. If you do not agree with the practices described herein, please uninstall the Application from your device.</p>
+      </section>
+
+      <!-- Section 2 -->
+      <section id="section-2" class="policy-section">
+        <h2 class="section-heading">2. In-Game Virtual Economy &amp; Simulated Wallet Disclosures</h2>
+        <div class="callout-summary">
+          <div class="callout-title"><span>📌</span> Plain-Language Summary</div>
+          <p>Every coin, dollar amount ($), gem, gas fee, and wallet prompt in this game is part of a fictional simulation. You cannot make real money playing this game. Entering a crypto wallet address on the profile screen only advances an in-game story quest and will never interact with real cryptocurrency or banks.</p>
+        </div>
+        <h3 class="sub-heading">2.1 Fictional Arcade Scoring &amp; Dollar Prefix Formatting</h3>
+        <p>Throughout the Game's user interface, scores and virtual token rewards are formatted with a dollar sign prefix and three decimal places (e.g., <code>format_money(val) -&gt; "$%.3f"</code>, presenting values such as <code>$0.050</code>, <code>$25.000</code>, <code>$100.000</code>, or <code>$500.000</code>). You are explicitly notified that:</p>
+        <ul>
+          <li><strong>Zero Real-World Value:</strong> In-game points, balances, and gems are 100% fictional virtual entertainment tokens with zero real-world cash or monetary value ($0.00).</li>
+          <li><strong>No Banking Services:</strong> The Application is not a financial institution, bank, money services business (MSB), cryptocurrency exchange, custodial wallet, or investment vehicle.</li>
+          <li><strong>No Redemption:</strong> Virtual balances cannot under any circumstances be redeemed, exchanged, or cashed out for legal tender, cryptocurrencies, gift cards, or physical goods.</li>
+        </ul>
+
+        <h3 class="sub-heading">2.2 Simulated Cryptocurrency Wallet Address Storage</h3>
+        <p>In the game's Profile Screen, players can enter an optional cryptocurrency wallet address string (e.g., Ethereum or Solana address format):</p>
+        <ul>
+          <li><strong>Technical Storage:</strong> The string is stored locally in <code>user://jelly_data.json</code> and synchronized to the cloud table <code>public.player_backups.wallet_address</code>.</li>
+          <li><strong>Zero Blockchain Interaction:</strong> The Game contains zero Web3 libraries, zero cryptographic RPC nodes, zero private keys, and zero connectivity to any blockchain network.</li>
+          <li><strong>Arcade Quest Milestone:</strong> The wallet input serves exclusively as an interactive milestone for an in-game progression quest.</li>
+          <li><strong>Celebration Rewards:</strong> Completing the simulated 48-hour processing queue activates <code>claim_simulation_rewards()</code>, granting purely in-game digital perks: 30 days of ad-free gameplay, a permanent 2X VIP multiplier, and 100 of each consumable power-up (Bombs, Shakes, Doubles, Shields). Zero real-world money or cryptocurrency is disbursed.</li>
+        </ul>
+      </section>
+
+      <!-- Section 3 -->
+      <section id="section-3" class="policy-section">
+        <h2 class="section-heading">3. Data We Collect and How We Collect It</h2>
+        <div class="callout-summary">
+          <div class="callout-title"><span>📌</span> Plain-Language Summary</div>
+          <p>We collect two types of data: (1) what you create or provide (guest ID, optional username/email, high scores, merge stats, and booster inventory), and (2) technical details sent automatically by your phone (device model, Android OS version, IP address, and Google Advertising ID). We never collect credit cards or real home addresses.</p>
+        </div>
+
+        <h3 class="sub-heading">3.1 Anonymous Guest Mode Data (Default)</h3>
+        <p>By default, the Game does not require account creation or personal login credentials:</p>
+        <ul>
+          <li><strong>Guest Account Identifier:</strong> Format <code>guest_WATER-XXXXXX</code>, generated algorithmically via client-side XOR hashing of random integers and system timestamp entropy.</li>
+          <li><strong>Referral Code:</strong> A 12-character string (e.g., <code>WATER-XXXXXX</code>) assigned to your device to facilitate optional friend referrals.</li>
+          <li><strong>Guest Cloud Saves:</strong> Guest progress is backed up to our cloud database under this anonymous guest ID without requiring email verification.</li>
+        </ul>
+
+        <h3 class="sub-heading">3.2 Optional Registered Account Data (Supabase Auth)</h3>
+        <p>If you choose to create a registered account or link your profile via our optional authentication screen:</p>
+        <ul>
+          <li><strong>Email Address:</strong> Stored securely in Supabase GoTrue authentication servers (<code>auth.users</code>) and mirrored in <code>player_backups.email</code>.</li>
+          <li><strong>Password:</strong> Salted and hashed using secure bcrypt algorithms on the backend. We never see, log, or store plaintext passwords.</li>
+          <li><strong>Custom Username:</strong> Player-selected public display name (e.g., "Jelly Champion"), indexed uniquely in the database.</li>
+        </ul>
+
+        <h3 class="sub-heading">3.3 In-Game Progression and Virtual Inventory Data</h3>
+        <p>To provide continuous gameplay across sessions and devices, the Game synchronizes:</p>
+        <ul>
+          <li><strong>Scores &amp; Progress:</strong> Virtual score balance (<code>high_score</code>), single-game record (<code>top_score</code>), merge count (<code>total_merges</code>), and rounds played (<code>games_played</code>).</li>
+          <li><strong>Booster Inventories:</strong> Counts of Jelly Bombs (<code>bomb_count</code>), Container Shakes (<code>shake_count</code>), Double Multipliers (<code>double_count</code>), and Danger Line Shields (<code>shield_count</code>).</li>
+          <li><strong>VIP Status:</strong> Active duration timer (<code>vip_timer</code>) providing in-game multiplier privileges.</li>
+          <li><strong>Quest Metrics:</strong> Validation Gems collected (<code>validation_gems</code>), daily tasks (<code>daily_tasks</code>), stage objectives (<code>stage_tasks</code>), gas fee status (<code>gas_fee_paid</code>), rewarded ad counts (<code>validation_ads_watched</code>), and withdrawal simulation timestamps (<code>withdrawal_requested_at</code>, <code>ad_free_until</code>, <code>is_simulation_completed</code>).</li>
+          <li><strong>Social Referral Data:</strong> Inviter referral code (<code>referred_by_code</code>), friend count (<code>referral_count</code>), and referral bonus points (<code>referral_earnings</code>).</li>
+          <li><strong>Full Game State Snapshot:</strong> A complete JSON backup payload stored in <code>player_backups.save_data</code>.</li>
+        </ul>
+
+        <h3 class="sub-heading">3.4 Technical Identifiers, Device Specs &amp; Advertising IDs</h3>
+        <p>When the Game communicates with cloud servers and ad networks, the following technical data is processed:</p>
+        <ul>
+          <li><strong>Device Hardware:</strong> Manufacturer, model, CPU architecture (<code>arm64-v8a</code>), screen resolution, and available RAM.</li>
+          <li><strong>Operating System:</strong> Platform (Android, iOS, Web), OS version, and API level (Android API 24 to 36).</li>
+          <li><strong>Google Advertising ID (GAID / AD_ID):</strong> Resettable 32-character advertising identifier used for ad attribution, fraud prevention, and personalization.</li>
+          <li><strong>Google Play App Set ID:</strong> Scoped identifier used for cross-app analytics within our developer account.</li>
+          <li><strong>Network State &amp; IP:</strong> Connection type (Wi-Fi/Cellular) and client IP address, used to infer coarse location (city/country).</li>
+        </ul>
+
+        <h3 class="sub-heading">3.5 Push Notification Tokens</h3>
+        <p>If you grant notification permissions (<code>android.permission.POST_NOTIFICATIONS</code>), your Firebase Cloud Messaging (FCM) registration token is stored in <code>public.user_push_tokens</code> alongside your <code>user_id</code>, device platform, and app version to deliver retention reminders (2h, 24h, 48h) and remote gift broadcasts.</p>
+
+        <h3 class="sub-heading">3.6 Local Sandboxed Storage</h3>
+        <p>Local files are strictly sandboxed within <code>user://</code> (<code>/data/data/com.water.ball.merge.game/files</code>):</p>
+        <ul>
+          <li><code>user://jelly_data.json</code>: Local JSON file of game state, scores, and quest milestones.</li>
+          <li><code>user://supabase_auth.json</code>: Active session JWT tokens.</li>
+          <li><code>user://seen_notifications.json</code>: History of viewed announcement IDs.</li>
+          <li><code>user://jelly_highscore.save</code>: Legacy binary score file.</li>
+        </ul>
+
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Data Category</th>
+                <th>Specific Data Points</th>
+                <th>Collection Method</th>
+                <th>Storage Location</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Account Identity</strong></td>
+                <td>Guest ID (<code>guest_WATER-XXXXXX</code>), referral code, username</td>
+                <td>Algorithmic generation or user entry</td>
+                <td>Local sandbox &amp; <code>public.player_backups</code></td>
+              </tr>
+              <tr>
+                <td><strong>Credentials</strong></td>
+                <td>Email address, bcrypt-hashed password</td>
+                <td>Optional user registration</td>
+                <td>Supabase Auth (<code>auth.users</code>)</td>
+              </tr>
+              <tr>
+                <td><strong>Gameplay &amp; Inventory</strong></td>
+                <td>High scores, merges, boosters, VIP timer, quest progress</td>
+                <td>Automated gameplay events</td>
+                <td>Local sandbox &amp; <code>public.player_backups</code></td>
+              </tr>
+              <tr>
+                <td><strong>Simulated Quest</strong></td>
+                <td>Wallet address string, gas fee paid flag, gem count</td>
+                <td>User input &amp; quest actions</td>
+                <td>Local sandbox &amp; <code>public.player_backups</code></td>
+              </tr>
+              <tr>
+                <td><strong>Device &amp; Network</strong></td>
+                <td>Device model, OS version, IP address, Wi-Fi status</td>
+                <td>Automated system queries</td>
+                <td>Server connection logs &amp; ad SDKs</td>
+              </tr>
+              <tr>
+                <td><strong>Advertising IDs</strong></td>
+                <td>Google Advertising ID (GAID), App Set ID</td>
+                <td>Google Play Services / Ad SDKs</td>
+                <td>Ad mediation partner servers</td>
+              </tr>
+              <tr>
+                <td><strong>Notifications</strong></td>
+                <td>FCM push token, platform, build version</td>
+                <td>Push registration prompt</td>
+                <td><code>public.user_push_tokens</code></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Section 4 -->
+      <section id="section-4" class="policy-section">
+        <h2 class="section-heading">4. Purposes and Legal Bases for Data Processing (GDPR Art. 6)</h2>
+        <div class="callout-summary">
+          <div class="callout-title"><span>📌</span> Plain-Language Summary</div>
+          <p>Under European privacy laws, we need a valid legal reason for every piece of data we process. We process your data to: (1) let you play and save your game progress across devices (<strong>Contract</strong>); (2) show ads and send notifications if you agree (<strong>Consent</strong>); and (3) protect against cheating, hacking, and device clock tampering (<strong>Legitimate Interests</strong>).</p>
+        </div>
+        <p>In accordance with Article 6 of the General Data Protection Regulation (GDPR), we process your personal data under the following legal bases:</p>
+
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Purpose of Processing</th>
+                <th>Data Categories</th>
+                <th>Legal Basis (GDPR Art. 6)</th>
+                <th>Operational Details</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Core Gameplay &amp; Cloud Backups</strong></td>
+                <td>Scores, merges, boosters, guest ID, email, username</td>
+                <td><strong>Contractual Necessity (Art. 6(1)(b))</strong></td>
+                <td>Saving progress, synchronizing game state across devices, and restoring profiles.</td>
+              </tr>
+              <tr>
+                <td><strong>Anti-Cheat &amp; Server Clock Sync</strong></td>
+                <td>HTTP HEAD timestamps, monotonic ticks, network state</td>
+                <td><strong>Legitimate Interests (Art. 6(1)(f))</strong></td>
+                <td>Verifying authoritative server time to prevent clock manipulation, quest skipping, and cheating.</td>
+              </tr>
+              <tr>
+                <td><strong>Ad Delivery &amp; Mediation</strong></td>
+                <td>GAID, IP address, device specs, ad engagement logs</td>
+                <td><strong>Consent (Art. 6(1)(a))</strong> / <strong>Legitimate Interests (Art. 6(1)(f))</strong></td>
+                <td>Serving banner, interstitial, and rewarded ads. Personalized ads are delivered only with affirmative consent via Google UMP.</td>
+              </tr>
+              <tr>
+                <td><strong>Push Notifications</strong></td>
+                <td>FCM push token, platform, app version</td>
+                <td><strong>Consent (Art. 6(1)(a))</strong></td>
+                <td>Sending retention reminders and free gift alerts, revocable anytime in device OS settings.</td>
+              </tr>
+              <tr>
+                <td><strong>Fraud Prevention &amp; Security</strong></td>
+                <td>Client IP, unique referral codes, username index</td>
+                <td><strong>Legitimate Interests (Art. 6(1)(f))</strong></td>
+                <td>Preventing duplicate referral abuse, botting, and unauthorized database writes.</td>
+              </tr>
+              <tr>
+                <td><strong>Legal Compliance</strong></td>
+                <td>Audit timestamps (<code>created_at</code>, <code>updated_at</code>), consent logs</td>
+                <td><strong>Legal Obligation (Art. 6(1)(c))</strong></td>
+                <td>Complying with statutory audits, accounting laws, and user rights requests.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Section 5 -->
+      <section id="section-5" class="policy-section">
+        <h2 class="section-heading">5. Third-Party Integrations, Processors &amp; Ad Mediation Networks</h2>
+        <div class="callout-summary">
+          <div class="callout-title"><span>📌</span> Plain-Language Summary</div>
+          <p>We work with trusted partners to run our game. <strong>Supabase</strong> provides cloud database hosting for your saves. <strong>Google AdMob</strong>, <strong>ironSource LevelPlay</strong>, <strong>Unity Ads</strong>, and <strong>Meta Audience Network</strong> deliver the ads that support our free game. These ad networks use your Advertising ID and device specs to display and measure ads.</p>
+        </div>
+        <p>The Application integrates with several third-party software development kits (SDKs) and cloud services. Depending on their role, these third parties act as Data Processors or Independent Data Controllers governed by their own privacy policies:</p>
+
+        <h3 class="sub-heading">5.1 Supabase Cloud Backend &amp; Database</h3>
+        <ul>
+          <li><strong>Provider:</strong> Supabase Inc. (AWS cloud infrastructure).</li>
+          <li><strong>Service URL:</strong> <code>https://rfgrhblsblxazrrpnnhi.supabase.co</code></li>
+          <li><strong>Purpose:</strong> Cloud database storage (<code>player_backups</code>, <code>user_push_tokens</code>, <code>app_config</code>, <code>app_notifications</code>), authentication, and server-time anti-cheat sync.</li>
+          <li><strong>Data Shared:</strong> User IDs, emails, hashed passwords, game state JSON payloads, wallet address strings, IP addresses.</li>
+          <li><strong>Privacy Policy:</strong> <a href="https://supabase.com/privacy" target="_blank" rel="noopener noreferrer">https://supabase.com/privacy</a></li>
+        </ul>
+
+        <h3 class="sub-heading">5.2 Google Mobile Ads (AdMob) &amp; Google Play Services</h3>
+        <ul>
+          <li><strong>Provider:</strong> Google LLC (Mountain View, CA, USA).</li>
+          <li><strong>App ID:</strong> <code>ca-app-pub-5813591814140967~5857673708</code></li>
+          <li><strong>Unit IDs:</strong> App Open (<code>7297824443</code>), Banner (<code>3115036854</code>), Interstitial (<code>1176192665</code>), Rewarded (<code>1207982253</code>).</li>
+          <li><strong>Purpose:</strong> Displaying contextual and personalized ads; fraud detection; ad attribution.</li>
+          <li><strong>Consent:</strong> Google User Messaging Platform (UMP) SDK is integrated for GDPR/ePrivacy consent handling.</li>
+          <li><strong>Privacy Policy:</strong> <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">https://policies.google.com/technologies/ads</a></li>
+        </ul>
+
+        <h3 class="sub-heading">5.3 ironSource LevelPlay (Mediation Host)</h3>
+        <ul>
+          <li><strong>Provider:</strong> ironSource Mobile Ltd. / Unity Technologies.</li>
+          <li><strong>App Key:</strong> <code>2881cc10d</code></li>
+          <li><strong>Placements:</strong> Rewarded Video (<code>25380201</code>), Interstitial (<code>25380203</code>), Banner (<code>25380206</code>).</li>
+          <li><strong>Purpose:</strong> Multi-network mediation, programmatic bidding, and ad caching.</li>
+          <li><strong>Privacy Policy:</strong> <a href="https://www.is.com/privacy-policy/" target="_blank" rel="noopener noreferrer">https://www.is.com/privacy-policy/</a></li>
+        </ul>
+
+        <h3 class="sub-heading">5.4 Unity Ads</h3>
+        <ul>
+          <li><strong>Provider:</strong> Unity Technologies SF (San Francisco, CA, USA).</li>
+          <li><strong>Game ID / Org Core ID:</strong> <code>800388526</code> / <code>13469964865788</code></li>
+          <li><strong>Placements:</strong> <code>BP_Rewarded_Android</code>, <code>BP_Interstitial_Android</code>, <code>BP_Banner_Android</code>.</li>
+          <li><strong>Purpose:</strong> Video ad delivery and rewarded engagement metrics.</li>
+          <li><strong>Privacy Policy:</strong> <a href="https://unity.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">https://unity.com/legal/privacy-policy</a></li>
+        </ul>
+
+        <h3 class="sub-heading">5.5 Meta Audience Network</h3>
+        <ul>
+          <li><strong>Provider:</strong> Meta Platforms, Inc. (Menlo Park, CA, USA).</li>
+          <li><strong>App ID:</strong> <code>1720805139015786</code></li>
+          <li><strong>Placements:</strong> Rewarded (<code>1720805139015786_1720806865682280</code>), Interstitial (<code>1720805139015786_1720806262349007</code>), Banner (<code>1720805139015786_1720805925682374</code>).</li>
+          <li><strong>Purpose:</strong> Bidding ad mediation and interest-based ad matching.</li>
+          <li><strong>Privacy Policy:</strong> <a href="https://www.facebook.com/privacy/policy/" target="_blank" rel="noopener noreferrer">https://www.facebook.com/privacy/policy/</a></li>
+        </ul>
+
+        <h3 class="sub-heading">5.6 Network Connectivity Verification Endpoints</h3>
+        <p>The Game pings Google (<code>connectivitycheck.gstatic.com/generate_204</code>) and Cloudflare (<code>1.1.1.1</code>) every 12 seconds to ensure active connectivity prior to dropping balls or requesting ads. Client IP addresses are logged in routine server access logs.</p>
+      </section>
+
+      <!-- Section 6 -->
+      <section id="section-6" class="policy-section">
+        <h2 class="section-heading">6. Data Storage, Retention and Security Architecture</h2>
+        <div class="callout-summary">
+          <div class="callout-title"><span>📌</span> Plain-Language Summary</div>
+          <p>Your game backup is stored indefinitely on cloud servers so you never lose your high score or items when upgrading your phone. We do not automatically purge old data after a set period. If you want your account and cloud backup permanently deleted, you can request it by email, and our team will erase it within 30 days.</p>
+        </div>
+        <h3 class="sub-heading">6.1 Cloud Hosting and Encryption</h3>
+        <p>Cloud records are stored in enterprise-grade data centers managed by Supabase Inc. on Amazon Web Services (AWS). All communication between the Game client and backend servers is encrypted using Transport Layer Security (TLS 1.2 / TLS 1.3).</p>
+
+        <h3 class="sub-heading">6.2 Indefinite Retention Policy</h3>
+        <ul>
+          <li><strong>No Automated TTL:</strong> The database does not implement automated row expiration or background purge cron jobs.</li>
+          <li><strong>Indefinite Storage:</strong> Player records in <code>public.player_backups</code>, scores, booster inventories, wallet strings, and referral data are retained indefinitely to enable players to restore their progress at any time.</li>
+          <li><strong>Push Tokens:</strong> Retained in <code>public.user_push_tokens</code> until invalidated by Firebase Cloud Messaging or updated on a new device session.</li>
+          <li><strong>Local Data:</strong> Retained in the application sandbox until you clear app data via device settings or uninstall the Game.</li>
+        </ul>
+
+        <h3 class="sub-heading">6.3 Technical Safeguards</h3>
+        <p>We enforce PostgreSQL Row Level Security (RLS) policies on cloud tables, bcrypt password hashing via Supabase GoTrue, and protected local application sandboxing with <code>allowBackup=false</code> to prevent unauthorized access.</p>
+      </section>
+
+      <!-- Section 7 -->
+      <section id="section-7" class="policy-section">
+        <h2 class="section-heading">7. User Privacy Rights and Account Deletion Protocol</h2>
+        <div class="callout-summary">
+          <div class="callout-title"><span>📌</span> Plain-Language Summary</div>
+          <p>You have full legal rights to access, copy, correct, or delete your data. <strong>Because the game does not currently have an in-app "Delete" button, you can request complete deletion of your account and cloud backups by emailing <code>privacy@waterballmerge.com</code> with your Player ID or Referral Code.</strong> We will fulfill your request within 30 days, free of charge.</p>
+        </div>
+        <h3 class="sub-heading">7.1 European (GDPR) and UK User Rights</h3>
+        <p>Under Articles 12 through 23 of the GDPR, European and UK players hold the following rights:</p>
+        <ul>
+          <li><strong>Right of Access (Art. 15):</strong> Request a copy of all stored personal data and cloud backup records.</li>
+          <li><strong>Right to Rectification (Art. 16):</strong> Correct inaccurate usernames or profile information.</li>
+          <li><strong>Right to Erasure (Art. 17):</strong> Request permanent deletion of all cloud backup records and account data.</li>
+          <li><strong>Right to Data Portability (Art. 20):</strong> Receive your game data in structured, machine-readable JSON format.</li>
+          <li><strong>Right to Restrict or Object (Art. 18 &amp; 21):</strong> Object to processing based on legitimate interests or personalized advertising.</li>
+          <li><strong>Right to Withdraw Consent:</strong> Revoke ad personalization or notification consent at any time.</li>
+        </ul>
+
+        <h3 class="sub-heading">7.2 International Data Transfers</h3>
+        <p>When data is transferred outside the European Economic Area (e.g., to servers in the United States), transfers are safeguarded under European Commission Standard Contractual Clauses (SCCs) and the EU-U.S. Data Privacy Framework.</p>
+
+        <h3 class="sub-heading">7.3 Mandatory Account Deletion Protocol (Manual Support Fulfillment)</h3>
+        <p>To comply with Google Play User Data policies and statutory erasure regulations:</p>
+        <ol>
+          <li><strong>Notice of In-App Limitations:</strong> The current version of <em>Water Ball: Merge Game</em> does not provide an automated in-app self-service "Delete Account" button. Logging out or uninstalling the app removes local files but <strong>does not</strong> delete cloud records in <code>public.player_backups</code>.</li>
+          <li><strong>How to Request Deletion:</strong>
+            <ul>
+              <li>Locate your <strong>Player ID</strong> (e.g., <code>guest_WATER-XXXXXX</code> or registered email) or your <strong>Referral Code</strong> on your in-game Profile Screen.</li>
+              <li>Send an email to: <a href="mailto:privacy@waterballmerge.com"><strong>privacy@waterballmerge.com</strong></a> with the subject line <code>Data Deletion Request - Water Ball Merge</code>.</li>
+              <li>Include your Player ID, referral code, and username to help us locate your record.</li>
+            </ul>
+          </li>
+          <li><strong>Processing Timeline:</strong> A database administrator will manually purge your records from <code>player_backups</code>, <code>user_push_tokens</code>, and <code>auth.users</code> within <strong>thirty (30) calendar days</strong> of verified receipt. You will receive a written confirmation email once completed.</li>
+        </ol>
+      </section>
+
+      <!-- Section 8 -->
+      <section id="section-8" class="policy-section">
+        <h2 class="section-heading">8. California Privacy Rights (CCPA / CPRA Disclosures)</h2>
+        <div class="callout-summary">
+          <div class="callout-title"><span>📌</span> Plain-Language Summary</div>
+          <p>California residents have specific privacy rights under the CCPA/CPRA. We do not sell your personal data for money. However, sharing your Advertising ID with ad networks for tailored ads may count as "sharing" or "selling" under California law. You can opt out at any time in your phone's Android settings (<em>Settings &gt; Google &gt; Ads &gt; Delete advertising ID</em>).</p>
+        </div>
+        <p>Under the California Consumer Privacy Act (CCPA), as amended by the CPRA, California consumers are entitled to disclosures regarding their Personal Information (PI) collected over the preceding 12 months:</p>
+
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>CCPA Category</th>
+                <th>Specific Data Collected</th>
+                <th>Business Purpose</th>
+                <th>Disclosed to Third Parties?</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Identifiers</strong></td>
+                <td>IP address, GAID, Supabase UUID, Guest ID, referral code, username, email</td>
+                <td>Authentication, cloud saves, ad delivery, fraud prevention</td>
+                <td>Yes (Supabase, AdMob, ironSource, Unity, Meta)</td>
+              </tr>
+              <tr>
+                <td><strong>Personal Records</strong></td>
+                <td>Email address, user-entered wallet address string</td>
+                <td>Account management, simulated quest tracking</td>
+                <td>Yes (Supabase cloud storage)</td>
+              </tr>
+              <tr>
+                <td><strong>Commercial Info</strong></td>
+                <td>Virtual balances, booster counts, VIP timer, gas fee status</td>
+                <td>Core gameplay balance, economy management</td>
+                <td>Yes (Supabase cloud storage)</td>
+              </tr>
+              <tr>
+                <td><strong>Network Activity</strong></td>
+                <td>Merge counts, session durations, ad views, app launches</td>
+                <td>Anti-cheat verification, ad mediation, server health</td>
+                <td>Yes (Ad mediation partner networks)</td>
+              </tr>
+              <tr>
+                <td><strong>Geolocation</strong></td>
+                <td>Coarse, non-precise location (country/city derived from IP)</td>
+                <td>Ad regionalization, server routing</td>
+                <td>Yes (Cloud hosts &amp; ad networks)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 class="sub-heading">8.1 "Do Not Sell or Share My Personal Information"</h3>
+        <p>We do not sell personal information for money. However, providing device advertising identifiers (GAID) to third-party ad networks to serve interest-based ads is classified as "sharing" or a statutory "sale" under California law. You may opt out at any time:</p>
+        <ul>
+          <li><strong>Android Settings:</strong> Open <strong>Settings ➔ Google ➔ Ads ➔ Delete advertising ID</strong> (or toggle "Opt out of Ads Personalization"). Once deleted, ad networks receive zeroed strings.</li>
+          <li><strong>iOS Settings:</strong> Open <strong>Settings ➔ Privacy &amp; Security ➔ Tracking</strong> and disable tracking for <em>Water Ball Merge</em>.</li>
+          <li><strong>Written Opt-Out:</strong> Email <a href="mailto:privacy@waterballmerge.com">privacy@waterballmerge.com</a> with the subject line <em>"CCPA Do Not Sell/Share Request"</em>.</li>
+        </ul>
+
+        <h3 class="sub-heading">8.2 Non-Discrimination</h3>
+        <p>In accordance with Cal. Civ. Code § 1798.125, we will never discriminate against you for exercising your CCPA rights. We will not deny you access, alter game physics or difficulty, or degrade your gameplay experience.</p>
+      </section>
+
+      <!-- Section 9 -->
+      <section id="section-9" class="policy-section">
+        <h2 class="section-heading">9. Children's Privacy Protection (COPPA &amp; Global Age Limits)</h2>
+        <div class="callout-summary">
+          <div class="callout-title"><span>📌</span> Plain-Language Summary</div>
+          <p><strong>This game is NOT intended for children under 13 (or under 16 in Europe/UK).</strong> We do not knowingly collect personal data from children. If you believe your child has shared personal information or created an account, please email us, and we will delete their data immediately.</p>
+        </div>
+        <p><em>Water Ball: Merge Game</em> is designed and published as a general audience casual arcade puzzle game. <strong>The Application is strictly not directed to, marketed towards, or intended for children under the age of thirteen (13) in the United States, or under sixteen (16) in the European Economic Area and the United Kingdom.</strong></p>
+        <ul>
+          <li><strong>No Knowing Collection:</strong> We do not knowingly solicit, collect, or store personal information (including persistent device advertising identifiers) from children under 13 without verifiable parental consent.</li>
+          <li><strong>Ad Compliance:</strong> Ad mediation requests comply with general audience standards, and predatory or age-inappropriate ads are prohibited.</li>
+          <li><strong>Parental Deletion Rights:</strong> If a parent or guardian discovers that a child has provided personal information or has an active cloud record, please contact us immediately at <a href="mailto:privacy@waterballmerge.com"><strong>privacy@waterballmerge.com</strong></a>. We will permanently purge the record from our database upon verification.</li>
+        </ul>
+      </section>
+
+      <!-- Section 10 -->
+      <section id="section-10" class="policy-section">
+        <h2 class="section-heading">10. Device Permissions and Hardware Access</h2>
+        <div class="callout-summary">
+          <div class="callout-title"><span>📌</span> Plain-Language Summary</div>
+          <p>The game asks only for standard technical permissions needed to connect to the internet, display ads, schedule local reminders, and save your progress. We never access your contacts, camera, microphone, GPS location, or photos.</p>
+        </div>
+
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Permission</th>
+                <th>Type</th>
+                <th>Operational Justification</th>
+                <th>Revocation Method</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>android.permission.INTERNET</code></td>
+                <td>Normal</td>
+                <td>Communicates with Supabase cloud backend and ad mediation networks.</td>
+                <td>Required for online features.</td>
+              </tr>
+              <tr>
+                <td><code>android.permission.ACCESS_NETWORK_STATE</code></td>
+                <td>Normal</td>
+                <td>Monitors connectivity via <code>NetworkManager.gd</code> to prevent offline desync.</td>
+                <td>Managed by OS.</td>
+              </tr>
+              <tr>
+                <td><code>android.permission.ACCESS_WIFI_STATE</code></td>
+                <td>Normal</td>
+                <td>Optimizes ad video preloading when connected to Wi-Fi.</td>
+                <td>Managed by OS.</td>
+              </tr>
+              <tr>
+                <td><code>android.permission.POST_NOTIFICATIONS</code></td>
+                <td>Runtime (API 33+)</td>
+                <td>Displays local reminder notifications (2h, 24h, 48h) and remote gift announcements.</td>
+                <td>Revocable in <strong>Settings ➔ Apps ➔ Water Ball Merge ➔ Notifications</strong>.</td>
+              </tr>
+              <tr>
+                <td><code>android.permission.SCHEDULE_EXACT_ALARM</code></td>
+                <td>System (API 31+)</td>
+                <td>Delivers precise local retention reminder alarms.</td>
+                <td>Revocable in <strong>Settings ➔ Special App Access ➔ Alarms &amp; Reminders</strong>.</td>
+              </tr>
+              <tr>
+                <td><code>com.google.android.gms.permission.AD_ID</code></td>
+                <td>Normal (Google Play)</td>
+                <td>Enables Advertising ID access for ad mediation and attribution.</td>
+                <td>Revocable in <strong>Settings ➔ Google ➔ Ads ➔ Delete Advertising ID</strong>.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Section 11 -->
+      <section id="section-11" class="policy-section">
+        <h2 class="section-heading">11. Amendments &amp; Policy Updates</h2>
+        <div class="callout-summary">
+          <div class="callout-title"><span>📌</span> Plain-Language Summary</div>
+          <p>We may update this Privacy Policy from time to time. When we make important changes, we will update the date at the top and notify you through an in-game announcement.</p>
+        </div>
+        <p>We reserve the right to amend or update this Privacy Policy to reflect changes in our data practices, new game features, or updated statutory requirements. When revisions occur, we will update the "Last Updated" date at the top of this document.</p>
+        <p>For material modifications, we will provide conspicuous notice via an in-game broadcast popup (via Supabase <code>app_notifications</code>) or via Google Play Store release notes. Your continued use of the Application after changes are posted constitutes your acceptance of the updated Privacy Policy.</p>
+      </section>
+
+      <!-- Section 12 -->
+      <section id="section-12" class="policy-section">
+        <h2 class="section-heading">12. Contact Information &amp; Data Protection Inquiries</h2>
+        <div class="callout-summary">
+          <div class="callout-title"><span>📌</span> Plain-Language Summary</div>
+          <p>If you have any questions about this policy or want to request account deletion, reach out to our privacy team at <code>privacy@waterballmerge.com</code>.</p>
+        </div>
+        <p>For data protection inquiries, statutory rights requests (GDPR access/erasure, CCPA opt-outs), or questions regarding this Privacy Policy, please contact our Data Protection Coordinator:</p>
+        <ul>
+          <li><strong>Application:</strong> Water Ball: Merge Game (<code>com.water.ball.merge.game</code>)</li>
+          <li><strong>Developer / Publisher:</strong> Water Ball Merge Development Team</li>
+          <li><strong>Dedicated Privacy Email:</strong> <a href="mailto:privacy@waterballmerge.com"><strong>privacy@waterballmerge.com</strong></a></li>
+          <li><strong>General Support Email:</strong> <a href="mailto:support@waterballmerge.com"><strong>support@waterballmerge.com</strong></a></li>
+          <li><strong>Google Play Listing:</strong> <a href="https://play.google.com/store/apps/details?id=com.water.ball.merge.game" target="_blank" rel="noopener noreferrer">https://play.google.com/store/apps/details?id=com.water.ball.merge.game</a></li>
+          <li><strong>Mailing Address:</strong> Legal &amp; Privacy Department, Water Ball Merge Studio, Worldwide Digital Services.</li>
+        </ul>
+
+        <h3 class="sub-heading">Supervisory Authority Complaints (EEA / UK)</h3>
+        <p>If you reside in the EEA or the UK and believe our data processing violates applicable data protection regulations, you have the right to lodge a complaint with your local Data Protection Authority:</p>
+        <ul>
+          <li><strong>European Data Protection Board:</strong> <a href="https://edpb.europa.eu/about-edpb/about-edpb/members_en" target="_blank" rel="noopener noreferrer">https://edpb.europa.eu/about-edpb/about-edpb/members_en</a></li>
+          <li><strong>UK Information Commissioner's Office (ICO):</strong> <a href="https://ico.org.uk/" target="_blank" rel="noopener noreferrer">https://ico.org.uk/</a></li>
+        </ul>
+      </section>
+
+    </main>
+
+    <!-- Document Footer -->
+    <footer class="doc-footer" role="contentinfo">
+      <p>&copy; 2026 Water Ball Merge Development Team. All rights reserved.</p>
+      <p>Water Ball: Merge Game &bull; Package: <code>com.water.ball.merge.game</code> &bull; Engine: Godot 4.7.1.stable</p>
+      <a href="#" class="back-to-top"><span>⬆️</span> Back to Top</a>
+    </footer>
+
+  </div>
+
+</body>
+</html>

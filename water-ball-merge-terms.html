@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Terms and Conditions of Service for Water Ball: Merge Game (com.water.ball.merge.game). Includes strict disclaimers regarding virtual currency, entertainment points, and simulated withdrawal mechanics.">
+  <meta name="author" content="Water Ball Merge Development Team">
+  <title>Terms and Conditions | Water Ball: Merge Game</title>
+  <style>
+    :root {
+      --bg-color: #f8fafc;
+      --card-bg: #ffffff;
+      --text-main: #1e293b;
+      --text-muted: #475569;
+      --heading-color: #0f172a;
+      --primary: #2563eb;
+      --primary-hover: #1d4ed8;
+      --primary-light: #eff6ff;
+      --accent-border: #3b82f6;
+      --warning-bg: #fef2f2;
+      --warning-border: #dc2626;
+      --warning-text: #991b1b;
+      --warning-light: #fffbeb;
+      --warning-light-border: #d97706;
+      --warning-light-text: #92400e;
+      --border-color: #e2e8f0;
+      --border-dark: #cbd5e1;
+      --table-header: #f1f5f9;
+      --table-stripe: #f8fafc;
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 14px;
+      --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+      --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.04);
+      --font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      --font-mono: "JetBrains Mono", Consolas, "SF Mono", "Courier New", monospace;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      font-family: var(--font-stack);
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 1rem 3rem 1rem;
+    }
+
+    /* Accessibility Skip Link */
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: var(--primary);
+      color: #ffffff;
+      padding: 8px 16px;
+      z-index: 1000;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 0 0 var(--radius-sm) 0;
+      transition: top 0.2s ease;
+    }
+    .skip-link:focus {
+      top: 0;
+    }
+
+    /* Outer Wrapper Container */
+    .container {
+      width: 100%;
+      max-width: 900px;
+      margin: 2rem auto;
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-lg);
+      overflow: hidden;
+    }
+
+    /* Header & Navigation Bar */
+    header.doc-header {
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+      color: #ffffff;
+      padding: 2.5rem 2rem 2rem 2rem;
+      border-bottom: 4px solid var(--primary);
+    }
+
+    .badge-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      background: rgba(255, 255, 255, 0.12);
+      color: #f8fafc;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .badge-primary {
+      background: rgba(37, 99, 235, 0.35);
+      border-color: rgba(96, 165, 250, 0.6);
+      color: #93c5fd;
+    }
+
+    .badge-warning {
+      background: rgba(239, 68, 68, 0.25);
+      border-color: rgba(248, 113, 113, 0.5);
+      color: #fca5a5;
+    }
+
+    .doc-title {
+      font-size: 2.25rem;
+      font-weight: 800;
+      line-height: 1.25;
+      color: #ffffff;
+      margin-bottom: 0.5rem;
+    }
+
+    .doc-subtitle {
+      font-size: 1.05rem;
+      color: #cbd5e1;
+      font-weight: 400;
+      margin-bottom: 1.5rem;
+    }
+
+    .doc-meta-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 0.75rem 1.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.15);
+      font-size: 0.85rem;
+      color: #94a3b8;
+    }
+
+    .doc-meta-item strong {
+      color: #e2e8f0;
+      font-weight: 600;
+    }
+
+    /* Document Switcher Nav */
+    .doc-switcher-nav {
+      display: flex;
+      background: #090d16;
+      border-bottom: 1px solid var(--border-color);
+      padding: 0.5rem 1.5rem;
+      gap: 0.75rem;
+      overflow-x: auto;
+    }
+
+    .doc-switch-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.6rem 1.2rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-decoration: none;
+      color: #94a3b8;
+      border-radius: var(--radius-sm);
+      transition: all 0.2s ease;
+      white-space: nowrap;
+    }
+
+    .doc-switch-btn:hover {
+      color: #ffffff;
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .doc-switch-btn.active {
+      color: #ffffff;
+      background: var(--primary);
+    }
+
+    /* Content Layout */
+    .content-body {
+      padding: 2.5rem 2rem;
+    }
+
+    /* Warning Banner Callout */
+    .warning-banner {
+      background: var(--warning-bg);
+      border: 2px solid var(--warning-border);
+      border-radius: var(--radius-md);
+      padding: 1.5rem 1.75rem;
+      margin-bottom: 2.5rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .warning-banner-header {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      color: var(--warning-text);
+      font-size: 1.15rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      margin-bottom: 0.85rem;
+    }
+
+    .warning-banner-header svg {
+      width: 26px;
+      height: 26px;
+      flex-shrink: 0;
+      fill: currentColor;
+    }
+
+    .warning-banner p {
+      color: #7f1d1d;
+      font-size: 0.95rem;
+      font-weight: 600;
+      line-height: 1.6;
+    }
+
+    /* Table of Contents */
+    .toc-container {
+      background: var(--table-stripe);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 1.5rem 1.75rem;
+      margin-bottom: 3rem;
+    }
+
+    .toc-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--heading-color);
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .toc-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+      gap: 0.5rem 1.5rem;
+      list-style: none;
+    }
+
+    .toc-grid li {
+      font-size: 0.92rem;
+    }
+
+    .toc-grid a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.15s ease;
+      display: inline-block;
+      padding: 0.2rem 0;
+    }
+
+    .toc-grid a:hover {
+      color: var(--primary-hover);
+      text-decoration: underline;
+    }
+
+    /* Headings & Typography */
+    h2 {
+      font-size: 1.55rem;
+      font-weight: 800;
+      color: var(--heading-color);
+      margin-top: 2.75rem;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--border-color);
+      scroll-margin-top: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--heading-color);
+      margin-top: 1.75rem;
+      margin-bottom: 0.75rem;
+      scroll-margin-top: 1.5rem;
+    }
+
+    h4 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: #334155;
+      margin-top: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      margin-bottom: 1.15rem;
+      color: var(--text-main);
+      font-size: 0.98rem;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    ul, ol {
+      margin: 0.75rem 0 1.25rem 1.75rem;
+      color: var(--text-main);
+    }
+
+    li {
+      margin-bottom: 0.45rem;
+      font-size: 0.98rem;
+    }
+
+    strong {
+      color: var(--heading-color);
+      font-weight: 700;
+    }
+
+    code {
+      font-family: var(--font-mono);
+      font-size: 0.88em;
+      background: #f1f5f9;
+      color: #0f172a;
+      padding: 0.15rem 0.4rem;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-color);
+    }
+
+    /* Plain-Language Callout Box */
+    .callout-summary {
+      background: var(--primary-light);
+      border-left: 4px solid var(--accent-border);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      padding: 1.15rem 1.4rem;
+      margin: 1.25rem 0 1.75rem 0;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .callout-header {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #1e40af;
+      margin-bottom: 0.45rem;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+
+    .callout-header svg {
+      width: 18px;
+      height: 18px;
+      fill: currentColor;
+    }
+
+    .callout-summary p {
+      color: #1e3a8a;
+      font-size: 0.92rem;
+      margin-bottom: 0;
+      line-height: 1.55;
+    }
+
+    /* High-Priority Warning Callout */
+    .callout-alert {
+      background: var(--warning-light);
+      border-left: 4px solid var(--warning-light-border);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      padding: 1.15rem 1.4rem;
+      margin: 1.25rem 0 1.75rem 0;
+    }
+
+    .callout-alert-header {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--warning-light-text);
+      margin-bottom: 0.45rem;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+
+    .callout-alert p {
+      color: #78350f;
+      font-size: 0.92rem;
+      margin-bottom: 0;
+      line-height: 1.55;
+    }
+
+    /* Responsive Data Tables */
+    .responsive-table-wrapper {
+      width: 100%;
+      overflow-x: auto;
+      margin: 1.5rem 0 2rem 0;
+      border: 1px solid var(--border-dark);
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-sm);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.9rem;
+    }
+
+    thead {
+      background: var(--table-header);
+      border-bottom: 2px solid var(--border-dark);
+    }
+
+    th {
+      padding: 0.85rem 1rem;
+      font-weight: 700;
+      color: var(--heading-color);
+      white-space: nowrap;
+    }
+
+    td {
+      padding: 0.85rem 1rem;
+      border-bottom: 1px solid var(--border-color);
+      color: var(--text-main);
+      vertical-align: top;
+      line-height: 1.5;
+    }
+
+    tbody tr:nth-child(even) {
+      background: var(--table-stripe);
+    }
+
+    tbody tr:last-child td {
+      border-bottom: none;
+    }
+
+    /* Back to Top Floating Button */
+    .back-to-top {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      color: var(--primary);
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-top: 1.5rem;
+      padding: 0.4rem 0.8rem;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-sm);
+      background: #ffffff;
+      transition: all 0.2s ease;
+    }
+
+    .back-to-top:hover {
+      background: var(--primary-light);
+      border-color: var(--primary);
+    }
+
+    /* Footer */
+    footer.doc-footer {
+      background: #0f172a;
+      color: #94a3b8;
+      padding: 2.5rem 2rem;
+      border-top: 1px solid var(--border-color);
+      font-size: 0.88rem;
+      text-align: center;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .footer-links a {
+      color: #cbd5e1;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.15s ease;
+    }
+
+    .footer-links a:hover {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+
+    .footer-copy {
+      color: #64748b;
+      font-size: 0.82rem;
+    }
+
+    /* Print Stylesheet */
+    @media print {
+      body {
+        background: #ffffff;
+        color: #000000;
+        padding: 0;
+      }
+      .container {
+        border: none;
+        box-shadow: none;
+        max-width: 100%;
+        margin: 0;
+      }
+      .skip-link, .doc-switcher-nav, .back-to-top, .footer-links {
+        display: none !important;
+      }
+      header.doc-header {
+        background: #ffffff;
+        color: #000000;
+        border-bottom: 2px solid #000000;
+        padding: 1rem 0;
+      }
+      .doc-title {
+        color: #000000;
+      }
+      .doc-subtitle, .doc-meta-grid, .doc-meta-item strong {
+        color: #333333;
+      }
+      .warning-banner, .callout-summary, .callout-alert {
+        border: 1px solid #000000;
+        background: #ffffff;
+        color: #000000;
+        page-break-inside: avoid;
+      }
+      .warning-banner p, .callout-summary p, .callout-alert p {
+        color: #000000;
+      }
+      h2, h3 {
+        page-break-after: avoid;
+      }
+      .responsive-table-wrapper {
+        border: 1px solid #000000;
+        page-break-inside: avoid;
+      }
+      th, td {
+        border-bottom: 1px solid #000000;
+        color: #000000;
+      }
+      footer.doc-footer {
+        background: #ffffff;
+        color: #333333;
+        border-top: 1px solid #000000;
+      }
+    }
+
+    /* Mobile Responsive Breakpoints */
+    @media (max-width: 768px) {
+      .content-body {
+        padding: 1.5rem 1.25rem;
+      }
+      header.doc-header {
+        padding: 1.75rem 1.25rem;
+      }
+      .doc-title {
+        font-size: 1.75rem;
+      }
+      .toc-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <div class="container">
+
+    <!-- Document Header -->
+    <header class="doc-header" role="banner">
+      <div class="badge-bar">
+        <span class="badge badge-primary">Official Legal Document</span>
+        <span class="badge badge-warning">Simulated Economy Notice</span>
+        <span class="badge">Godot Engine 4.7.1</span>
+      </div>
+      <h1 class="doc-title">Terms and Conditions of Service</h1>
+      <p class="doc-subtitle">Legal Agreement governing access and use of <strong>Water Ball: Merge Game</strong></p>
+      
+      <div class="doc-meta-grid">
+        <div class="doc-meta-item"><strong>Package ID:</strong> <code>com.water.ball.merge.game</code></div>
+        <div class="doc-meta-item"><strong>Current Version:</strong> 1.0.0 (Version Code 1)</div>
+        <div class="doc-meta-item"><strong>Effective Date:</strong> October 5, 2026</div>
+        <div class="doc-meta-item"><strong>Target Platforms:</strong> Android, iOS, Web (HTML5)</div>
+      </div>
+    </header>
+
+    <!-- Document Switcher Navigation -->
+    <nav class="doc-switcher-nav" aria-label="Legal Document Switcher">
+      <a href="terms_and_conditions.html" class="doc-switch-btn active" aria-current="page">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+        Terms &amp; Conditions (Current)
+      </a>
+      <a href="privacy_policy.html" class="doc-switch-btn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+        Privacy Policy
+      </a>
+    </nav>
+
+    <!-- Main Content Body -->
+    <main class="content-body" id="main-content">
+
+      <!-- Prominent Warning Banner -->
+      <div class="warning-banner" role="alert">
+        <div class="warning-banner-header">
+          <svg viewBox="0 0 24 24"><path d="M12 2L1 21h22L12 2zm0 3.99L19.53 19H4.47L12 5.99zM11 10v4h2v-4h-2zm0 6v2h2v-2h-2z"/></svg>
+          Critical Disclaimer: 100% Fictional Currency &amp; Simulated Withdrawals
+        </div>
+        <p>
+          <strong>"WATER BALL: MERGE GAME" IS A CASUAL 2D PHYSICS ARCADE PUZZLE GAME INTENDED SOLELY FOR ENTERTAINMENT PURPOSES.</strong> ALL IN-GAME BALANCES, COINS, REWARDS, SCORES FORMATTED WITH CURRENCY SYMBOLS (INCLUDING BUT NOT LIMITED TO "$100.000 CASHOUT GOAL" AND "$500.000 BALANCE"), "VALIDATION GEMS", "GAS FEES", "WALLET ADDRESSES", AND THE "48-HOUR BLOCKCHAIN TRANSFER PROCESSING QUEUE" ARE STRICTLY FICTIONAL, SIMULATED GAMEPLAY MECHANICS. THEY HAVE ABSOLUTELY ZERO REAL-WORLD MONETARY VALUE, DO NOT CONSTITUTE REAL CURRENCY, FINANCIAL INSTRUMENTS, BANK DEPOSITS, OR CRYPTOCURRENCIES, AND CAN NEVER BE EXCHANGED, WITHDRAWN, CASHOUT, OR REDEEMED FOR LEGAL TENDER, CRYPTOCURRENCY, OR GOODS OF VALUE. UPON COMPLETION OF THE SIMULATED WITHDRAWAL QUEST, USERS RECEIVE ONLY DIGITAL IN-GAME ITEMS (AD-FREE GAMEPLAY ACCESS, VIP MULTIPLIERS, AND BOOSTERS) AND ZERO REAL MONEY. DO NOT PLAY THIS GAME EXPECTING FINANCIAL RETURN OR MONETARY PAYOUTS.
+        </p>
+      </div>
+
+      <!-- Table of Contents -->
+      <nav class="toc-container" aria-label="Table of Contents" id="toc">
+        <div class="toc-title">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg>
+          Table of Contents
+        </div>
+        <ol class="toc-grid">
+          <li><a href="#section-1">1. Acceptance of Terms &amp; Agreement</a></li>
+          <li><a href="#section-2">2. Eligibility &amp; Age Requirements</a></li>
+          <li><a href="#section-3">3. Limited License &amp; Intellectual Property</a></li>
+          <li><a href="#section-4">4. Strict Virtual Currency Disclaimer</a></li>
+          <li><a href="#section-5">5. Simulated Withdrawal Quest Breakdown</a></li>
+          <li><a href="#section-6">6. User Accounts &amp; Cloud Sync</a></li>
+          <li><a href="#section-7">7. Prohibited Conduct &amp; Anti-Cheat</a></li>
+          <li><a href="#section-8">8. Advertising Networks &amp; Third Parties</a></li>
+          <li><a href="#section-9">9. Disclaimer of Warranties ("AS IS")</a></li>
+          <li><a href="#section-10">10. Limitation of Liability</a></li>
+          <li><a href="#section-11">11. Indemnification</a></li>
+          <li><a href="#section-12">12. Dispute Resolution &amp; Arbitration</a></li>
+          <li><a href="#section-13">13. Service Modifications &amp; Termination</a></li>
+          <li><a href="#section-14">14. Governing Law &amp; Jurisdiction</a></li>
+          <li><a href="#section-15">15. Severability &amp; Miscellaneous</a></li>
+          <li><a href="#section-16">16. Contact Channels &amp; Support</a></li>
+        </ol>
+      </nav>
+
+      <!-- Section 1 -->
+      <section id="section-1">
+        <h2>1. Acceptance of Terms and Agreement to be Bound</h2>
+        <div class="callout-summary">
+          <div class="callout-header">
+            <svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7zM9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9v1z"/></svg>
+            Plain-Language Summary
+          </div>
+          <p>By downloading, launching, or playing "Water Ball: Merge Game", you enter into a legally binding contract. If you do not agree with all of these terms and disclaimers, you must immediately uninstall and stop playing the game.</p>
+        </div>
+        <p>These Terms and Conditions of Service ("Terms", "Agreement") constitute a legally binding agreement entered into by and between you, whether personally or on behalf of an entity ("User", "Player", "you"), and the publishers and developers of <strong>Water Ball: Merge Game</strong> ("Company", "Developer", "Publisher", "we", "us", or "our"). These Terms govern your access to, download, installation, and use of the mobile application <strong>Water Ball: Merge Game</strong> (Package ID: <code>com.water.ball.merge.game</code>), including any related web versions, online cloud features, backend endpoints hosted on Supabase, and integrated advertising or push notification services (collectively, the "Game" or "Services").</p>
+        <p>By downloading, installing, launching, accessing, or playing the Game, you acknowledge that you have read, understood, and irrevocably agree to be bound by all of the provisions set forth in these Terms. <strong>IF YOU DO NOT AGREE WITH ALL OF THESE TERMS AND CONDITIONS, YOU ARE EXPRESSLY PROHIBITED FROM USING THE GAME AND YOU MUST IMMEDIATELY CEASE PLAYING, UNINSTALL, AND DELETE ALL COPIES OF THE APPLICATION FROM YOUR DEVICES.</strong></p>
+        <p>Supplemental terms and conditions or documents that may be posted on or within the Services from time to time are hereby expressly incorporated herein by reference. We reserve the right, in our sole and absolute discretion, to make changes, updates, or modifications to these Terms at any time. We will notify you of any changes by updating the "Last Updated" date at the top of these Terms or via in-game broadcast announcements powered by Supabase. Your continued use of the Game following the posting of revised Terms means that you accept and agree to the changes.</p>
+        <a href="#toc" class="back-to-top">↑ Back to Table of Contents</a>
+      </section>
+
+      <!-- Section 2 -->
+      <section id="section-2">
+        <h2>2. Eligibility, Age Requirements, and Parental Consent</h2>
+        <div class="callout-summary">
+          <div class="callout-header">
+            <svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7zM9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9v1z"/></svg>
+            Plain-Language Summary
+          </div>
+          <p>You must be at least 13 years old (or 16 in Europe and the UK) to play. Players under 18 must have their parent or legal guardian review and approve these Terms before playing.</p>
+        </div>
+        <h3>2.1 Minimum Age Requirements</h3>
+        <p>The Game is designed and offered as a general audience casual arcade puzzle game. However, due to online cloud save synchronization (Supabase) and third-party advertising network integration (ironSource LevelPlay, Google AdMob, Unity Ads, Meta Audience Network):</p>
+        <ul>
+          <li><strong>United States &amp; Global Users:</strong> You must be at least <strong>thirteen (13) years of age</strong> to play the Game, register an account, or transmit personal data.</li>
+          <li><strong>European Economic Area (EEA) and United Kingdom (UK):</strong> You must be at least <strong>sixteen (16) years of age</strong>, or the applicable age of digital consent in your jurisdiction.</li>
+        </ul>
+        <h3>2.2 Minors and Parental Oversight</h3>
+        <p>If you are between the ages of 13 and 18 (or the age of legal majority in your country of residence), you represent and warrant that your parent or legal guardian has reviewed, understood, and agreed to these Terms on your behalf prior to your use of the Game. The Company disclaims any liability for unauthorized use of the Services by minors in violation of these age thresholds.</p>
+        <h3>2.3 Legal Representation</h3>
+        <p>By accessing or using the Game, you represent and warrant that you have the legal capacity to enter into these Terms, are not barred from receiving services under applicable laws, and will comply with all relevant laws and regulations.</p>
+        <a href="#toc" class="back-to-top">↑ Back to Table of Contents</a>
+      </section>
+
+      <!-- Section 3 -->
+      <section id="section-3">
+        <h2>3. Limited License and Intellectual Property Rights</h2>
+        <div class="callout-summary">
+          <div class="callout-header">
+            <svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7zM9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9v1z"/></svg>
+            Plain-Language Summary
+          </div>
+          <p>You receive a personal, revocable license to play the game on your device. All source code, artwork, audio, and branding belong exclusively to the Company. You may not copy, reverse engineer, or sell game assets.</p>
+        </div>
+        <h3>3.1 Grant of Limited License</h3>
+        <p>Subject to your strict compliance with these Terms, the Company grants you a limited, non-exclusive, non-transferable, non-sublicensable, revocable license to download, install, and execute one copy of the Game on your personal mobile devices or compatible web browsers solely for your personal, non-commercial, entertainment use.</p>
+        <h3>3.2 Intellectual Property Ownership</h3>
+        <p>All rights, title, and interest in and to the Game—including but not limited to the Godot Engine source code, GDScript modules (<code>Main.gd</code>, <code>JellyData.gd</code>, <code>SupabaseManager.gd</code>, <code>ProfileScreen.gd</code>, etc.), visual artwork, 2D jelly sprites, textures, particle effects, UI themes, animations, audio sound effects, musical compositions, character designs, logos, trademarks, service marks, database schemas, and all underlying intellectual property—are owned exclusively by the Company or its licensors.</p>
+        <h3>3.3 License Restrictions</h3>
+        <p>You agree that you will not: copy, reproduce, distribute, or publicly display game assets; decompile, disassemble, or reverse engineer GDScript bytecode or PCK archives; modify or create derivative works; sell or commercially exploit virtual balances; or remove any proprietary copyright or legal notices.</p>
+        <a href="#toc" class="back-to-top">↑ Back to Table of Contents</a>
+      </section>
+
+      <!-- Section 4 -->
+      <section id="section-4">
+        <h2>4. Strict Virtual Currency and Entertainment Points Disclaimer</h2>
+        <div class="callout-alert">
+          <div class="callout-alert-header">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L1 21h22L12 2zm0 3.99L19.53 19H4.47L12 5.99zM11 10v4h2v-4h-2zm0 6v2h2v-2h-2z"/></svg>
+            Strict In-Game Currency Disclaimer
+          </div>
+          <p>All numbers displayed with a dollar sign (such as "$100.000 CASHOUT GOAL" or "$500.000 balance") are pretend arcade points. They have $0.00 real-world cash value, cannot be converted into cash, crypto, or gift cards, and do not constitute bank accounts or investments.</p>
+        </div>
+        <h3>4.1 Fictional Arcade Scoring Nature of Currency</h3>
+        <p>The Game utilizes numerical values, progress meters, and counters that are visually formatted with a dollar sign prefix and three decimal places (e.g., <code>$%.3f</code> generated via <code>JellyData.format_money()</code>). Displayed strings include, without limitation:</p>
+        <ul>
+          <li><code>"$100.000 CASHOUT GOAL"</code></li>
+          <li><code>"$500.000 balance"</code></li>
+          <li><code>"$25.000 Gas Fee"</code></li>
+          <li><code>"+$0.050 Reward"</code></li>
+          <li>Daily Quest cash bonuses (<code>+$0.015</code>, <code>+$0.020</code>, <code>+$0.025</code>)</li>
+          <li>Referral welcome earnings (<code>+$0.050</code>)</li>
+          <li>In-game Shop booster prices (<code>$1.000</code>, <code>$1.500</code>, <code>$2.500</code>, <code>$25.000</code>)</li>
+          <li>Secondary progression tokens termed "Validation Gems"</li>
+        </ul>
+        <p><strong>YOU EXPRESSLY ACKNOWLEDGE AND AGREE THAT ALL SUCH AMOUNTS, LABELS, DOLLAR SIGNS, COINS, GEMS, SCORES, AND BALANCES ARE 100% FICTIONAL, SIMULATED ARCADE POINTS CREATED SOLELY FOR CASUAL GAMEPLAY ENTERTAINMENT AND GAME DESIGN THEMATICS.</strong></p>
+        <h3>4.2 Absolute Zero Monetary Value</h3>
+        <p>Under no circumstances do in-game coins, dollars, gems, or scores represent legal tender, fiat currencies, cryptocurrencies, blockchain tokens, gift cards, securities, or bank deposits. <strong>IN-GAME BALANCES HAVE A REAL-WORLD ECONOMIC VALUE OF EXACTLY ZERO DOLLARS ($0.00 USD).</strong></p>
+        <h3>4.3 Non-Redeemable, Non-Transferable, Non-Refundable</h3>
+        <p>Virtual points cannot be redeemed, cashed out, or exchanged for real money or goods under any legal theory. They do not constitute personal property, and you possess no property, ownership, or equity interest in any virtual currency or game state.</p>
+        <h3>4.4 Regulatory &amp; Banking Disclaimer</h3>
+        <p>The Company is <strong>NOT</strong> a bank, credit union, depository institution, money transmitter, or cryptocurrency custodian. The Game does not offer real-money gambling, sports betting, or lotteries. No real money can ever be deposited, wagered, won, or withdrawn.</p>
+        <a href="#toc" class="back-to-top">↑ Back to Table of Contents</a>
+      </section>
+
+      <!-- Section 5 -->
+      <section id="section-5">
+        <h2>5. Simulated Withdrawal Progression and Quest Mechanics Disclosure</h2>
+        <div class="callout-alert">
+          <div class="callout-alert-header">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L1 21h22L12 2zm0 3.99L19.53 19H4.47L12 5.99zM11 10v4h2v-4h-2zm0 6v2h2v-2h-2z"/></svg>
+            Simulated Withdrawal Quest Reality
+          </div>
+          <p>The 5-stage "withdrawal" quest is a theatrical arcade storyline. When the 48-hour countdown finishes, you receive ONLY in-game perks: 30 days of ad-free play, an infinite 2X VIP pass, and 100 bonus boosters. Exactly $0.00 in real money or cryptocurrency is ever disbursed.</p>
+        </div>
+        <p>The Game features an elaborate 5-stage progression quest accessible via the Profile and Money screens that theatrically simulates a cryptocurrency withdrawal workflow. As verified directly in the client source code, the system operates as follows:</p>
+
+        <!-- Detailed 5-Stage Responsive Table -->
+        <div class="responsive-table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Stage #</th>
+                <th scope="col">Stage Name &amp; Code State</th>
+                <th scope="col">Progression Tasks &amp; Requirements</th>
+                <th scope="col">Theatrical Simulation vs. Technical Reality</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Stage 1</strong></td>
+                <td><strong>$100 Track Milestone &amp; Gas Fee</strong><br><code>withdrawal_stage = 1</code></td>
+                <td>
+                  • Reach <code>$100.000</code> virtual balance milestone<br>
+                  • Pay <code>$25.000</code> simulated "Gas Fee"<br>
+                  • Score 5,000 points in a single game<br>
+                  • Deploy 5 consumable boosters
+                </td>
+                <td>
+                  <strong>Simulation:</strong> Displays text prompting payment of a "$25.000 Gas Fee" to initiate blockchain transaction routing.<br>
+                  <strong>Reality:</strong> Executing <code>ProfileScreen.gd:1155</code> simply deducts 25.0 from the player's internal virtual float balance (<code>high_score -= 25.0</code>) and sets <code>gas_fee_paid = true</code>. <strong>Zero real money or network fees are charged.</strong>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Stage 2</strong></td>
+                <td><strong>Peer Verification Track</strong><br><code>withdrawal_stage = 2</code></td>
+                <td>
+                  • Invite 20 active players via referral code (<code>WATER-XXXXXX</code>)<br>
+                  • Play 10 complete game rounds<br>
+                  • Pop 15 water balls using Bomb boosters
+                </td>
+                <td>
+                  <strong>Simulation:</strong> Prompts player to complete "peer-to-peer network verification" by sharing referral links.<br>
+                  <strong>Reality:</strong> Advances quest state (<code>withdrawal_stage = 3</code>) when database counter <code>referral_count &gt;= 20</code>. Purely an in-game social invitation milestone.
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Stage 3</strong></td>
+                <td><strong>$500 Grand Track &amp; Validation Gems</strong><br><code>withdrawal_stage = 3</code></td>
+                <td>
+                  • Reach <code>$500.000</code> virtual balance milestone<br>
+                  • Collect 50 "Validation Gems" (via 50 rewarded ads or <code>$10.000</code> virtual cash each)<br>
+                  • Merge 30 water balls<br>
+                  • Claim 2 free gifts in shop
+                </td>
+                <td>
+                  <strong>Simulation:</strong> Claims that 50 Validation Gems are required to activate final cryptographic blockchain clearance.<br>
+                  <strong>Reality:</strong> Validation Gems are secondary in-game tokens stored in <code>JellyData.validation_gems</code>. Zero actual validation nodes or blockchain systems are involved.
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Stage 4</strong></td>
+                <td><strong>Wallet Input &amp; Activation</strong><br><code>withdrawal_stage = 4</code></td>
+                <td>
+                  • Enter destination wallet address string into <code>WalletInput</code> field<br>
+                  • Tap the "WITHDRAW NOW" button
+                </td>
+                <td>
+                  <strong>Simulation:</strong> Presents a simulated crypto address input field (e.g. <code>0x71C4B89...</code>) and prompts user to submit withdrawal request.<br>
+                  <strong>Reality:</strong> Executes <code>JellyData.start_withdrawal_request()</code>. The text is saved locally to <code>user://jelly_data.json</code> and mirrored to Supabase column <code>player_backups.wallet_address</code> as a plain string. <strong>The Game contains zero Web3 libraries, RPC clients, smart contracts, or payment gateways. No transaction is broadcast.</strong>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Stage 5</strong></td>
+                <td><strong>48-Hour Processing Queue</strong><br><code>withdrawal_stage = 5</code></td>
+                <td>
+                  • Real-time countdown timer running for exactly 172,800 seconds (48 hours)<br>
+                  • Displays: <em>"PROCESSING - Network transfer queue active. Node validation finalizing on blockchain."</em>
+                </td>
+                <td>
+                  <strong>Simulation:</strong> Displays a simulated live network queue and blockchain node confirmation ticker.<br>
+                  <strong>Reality:</strong> Standard client countdown calculates time against authoritative server time (<code>SupabaseManager.sync_server_time()</code>) backed by anti-rollback guards. No external transaction queuing occurs.
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Outcome<br>(Stage 6)</strong></td>
+                <td><strong>Simulation Completion &amp; Rewards</strong><br><code>withdrawal_stage = 6</code></td>
+                <td>
+                  • 48-hour timer reaches <code>00:00:00</code><br>
+                  • Button transitions to <code>"CLAIM SIMULATION REWARD"</code><br>
+                  • Tapping opens <code>SimulationModal</code> celebration dialog
+                </td>
+                <td>
+                  <strong>ACTUAL AND EXCLUSIVE OUTCOME:</strong> Executing <code>JellyData.claim_simulation_rewards()</code> grants <strong>STRICTLY DIGITAL GAMEPLAY PERKS</strong>:<br>
+                  1. <strong>30 Days Ad-Free Experience</strong> (<code>ad_free_until_timestamp</code>)<br>
+                  2. <strong>Infinite VIP Pass</strong> (permanent 2X score multiplier, <code>vip_timer = 99999999.0</code>)<br>
+                  3. <strong>+100 of each consumable booster</strong> (100 Bombs, 100 Shakes, 100 Doubles, 100 Shields)<br>
+                  4. Sets <code>is_simulation_completed = true</code>.<br>
+                  <strong>EXACTLY ZERO REAL DOLLARS, ZERO CRYPTOCURRENCY, AND ZERO REAL-WORLD ASSETS ARE TRANSFERRED.</strong>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>5.3 Irrevocable Waiver and Release of Monetary Claims</h3>
+        <p><strong>BY PARTICIPATING IN THE SIMULATED WITHDRAWAL PROGRESSION, YOU EXPRESSLY, VOLUNTARILY, AND IRREVOCABLY ACKNOWLEDGE AND AGREE THAT:</strong></p>
+        <ol>
+          <li>You have read and fully understood the technical breakdown set forth above;</li>
+          <li>You understand that the final outcome of the 5-stage progression is exclusively the receipt of non-monetary virtual gameplay assets (ad-free time, VIP status, and boosters);</li>
+          <li><strong>YOU HEREBY UNCONDITIONALLY WAIVE, RELEASE, AND DISCHARGE THE COMPANY, ITS DEVELOPERS, AFFILIATES, OFFICERS, DIRECTORS, AND AGENTS FROM ANY AND ALL CLAIMS, DEMANDS, LIABILITIES, CAUSES OF ACTION, OR LOSSES ARISING OUT OF OR RELATING TO ANY EXPECTATION, DEMAND, OR CLAIM FOR REAL-MONEY PAYOUTS, CRYPTOCURRENCY TRANSFERS, OR FINANCIAL COMPENSATION RELATING TO THE GAME.</strong></li>
+        </ol>
+        <a href="#toc" class="back-to-top">↑ Back to Table of Contents</a>
+      </section>
+
+      <!-- Section 6 -->
+      <section id="section-6">
+        <h2>6. User Accounts, Guest Identifiers, and Cloud State Synchronization</h2>
+        <div class="callout-summary">
+          <div class="callout-header">
+            <svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7zM9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9v1z"/></svg>
+            Plain-Language Summary
+          </div>
+          <p>You can play anonymously as a guest or create an optional email account. Scores and items are backed up automatically to Supabase cloud servers. To delete your account and cloud backup, email support@waterballmerge.com.</p>
+        </div>
+        <h3>6.1 Account Types</h3>
+        <p>The Game supports two operational modes: <strong>Anonymous Guest Mode</strong> (default, using a pseudorandom device code <code>WATER-XXXXXX</code>) and <strong>Authenticated Accounts</strong> (optional email/password registration managed via Supabase GoTrue Auth).</p>
+        <h3>6.2 Cloud Save Synchronization</h3>
+        <p>Game state is automatically debounced and backed up to the cloud table <code>public.player_backups</code>. Cloud restoration uses <em>Monotonic Maximum Reconciliation</em> to ensure offline achievements are preserved.</p>
+        <h3>6.3 Account Deletion Rights</h3>
+        <p>Because the client lacks an automated in-app deletion button, players may exercise their statutory right to erasure (under GDPR Art. 17 or CCPA) by emailing <code>support@waterballmerge.com</code> with their registered email or Guest Referral Code. Requests are processed within thirty (30) days.</p>
+        <a href="#toc" class="back-to-top">↑ Back to Table of Contents</a>
+      </section>
+
+      <!-- Section 7 -->
+      <section id="section-7">
+        <h2>7. Prohibited User Conduct, Anti-Cheat, and Fair Play Policies</h2>
+        <div class="callout-summary">
+          <div class="callout-header">
+            <svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7zM9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9v1z"/></svg>
+            Plain-Language Summary
+          </div>
+          <p>Cheating, using bots, modifying app memory, altering system clocks to skip timers, ad blocking during reward claims, and hacking our servers are strictly prohibited. Cheaters will have their progress wiped and accounts permanently banned.</p>
+        </div>
+        <h3>7.1 Absolute Prohibitions</h3>
+        <p>To protect gameplay integrity, players strictly agree NOT to:</p>
+        <ol>
+          <li><strong>Use Automation &amp; Bots:</strong> Employ automated scripts, macros, auto-clickers, or emulated inputs;</li>
+          <li><strong>Tamper with Device Clocks:</strong> Alter system clocks or spoof NTP times to bypass timers. (The Game enforces anti-rollback guards and server time synchronization via Supabase HTTP HEAD headers);</li>
+          <li><strong>Edit Memory or Binaries:</strong> Utilize Cheat Engine, GameGuardian, Lucky Patcher, Frida, or modified APKs/IPAs;</li>
+          <li><strong>Commit Ad Fraud:</strong> Spoof reward callbacks, use ad-blocking filters while claiming rewards, or automate video ad views;</li>
+          <li><strong>Intercept Network Traffic:</strong> Intercept, replay, or forge REST API payloads to Supabase endpoints;</li>
+          <li><strong>Engage in Referral Abuse:</strong> Create synthetic accounts to inflate referral counts or attempt self-referrals.</li>
+        </ol>
+        <h3>7.2 Enforcement Remedies</h3>
+        <p>Violations result in immediate progress resets, revocation of VIP/ad-free perks, device/IP blacklisting, and permanent account termination without liability.</p>
+        <a href="#toc" class="back-to-top">↑ Back to Table of Contents</a>
+      </section>
+
+      <!-- Section 8 -->
+      <section id="section-8">
+        <h2>8. Advertising Networks, Rewarded Videos, and Third-Party Services</h2>
+        <div class="callout-summary">
+          <div class="callout-header">
+            <svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7zM9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9v1z"/></svg>
+            Plain-Language Summary
+          </div>
+          <p>The game is supported by mobile ad networks (Google AdMob, ironSource, Unity Ads, Meta). Watching rewarded videos gives in-game bonuses. Third-party ad content is governed by each network's own policies.</p>
+        </div>
+        <p>The Game integrates third-party mobile advertising mediation and bidding frameworks, including ironSource LevelPlay (App Key: <code>2881cc10d</code>), Google AdMob (App ID: <code>ca-app-pub-5813591814140967~5857673708</code>), Unity Ads (Game ID: <code>800388526</code>), and Meta Audience Network (App ID: <code>1720805139015786</code>).</p>
+        <p>Rewarded video ad bonuses require voluntary participation and valid SDK completion callbacks. Advertisements are served by independent third-party networks, and your interactions with external ads are governed by the respective network's terms and privacy policies.</p>
+        <a href="#toc" class="back-to-top">↑ Back to Table of Contents</a>
+      </section>
+
+      <!-- Section 9 -->
+      <section id="section-9">
+        <h2>9. Disclaimer of Warranties ("AS IS" and "AS AVAILABLE")</h2>
+        <div class="callout-summary">
+          <div class="callout-header">
+            <svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7zM9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9v1z"/></svg>
+            Plain-Language Summary
+          </div>
+          <p>The game is provided "as is" with all faults. We do not promise that the game will always be error-free, uninterrupted, or available at all times. You play at your own risk.</p>
+        </div>
+        <p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE GAME IS PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS. THE COMPANY EXPRESSLY DISCLAIMS ALL WARRANTIES, WHETHER EXPRESS, IMPLIED, OR STATUTORY, INCLUDING WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, ACCURACY, AND NON-INFRINGEMENT.</p>
+        <p>THE COMPANY DOES NOT WARRANT THAT THE GAME WILL MEET YOUR REQUIREMENTS, BE UNINTERRUPTED, SECURE, BUG-FREE, OR FREE OF TRANSMISSION DELAYS OR DATA CORRUPTION. ANY USE OF THE GAME IS AT YOUR OWN SOLE RISK.</p>
+        <a href="#toc" class="back-to-top">↑ Back to Table of Contents</a>
+      </section>
+
+      <!-- Section 10 -->
+      <section id="section-10">
+        <h2>10. Limitation of Liability</h2>
+        <div class="callout-summary">
+          <div class="callout-header">
+            <svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7zM9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9v1z"/></svg>
+            Plain-Language Summary
+          </div>
+          <p>Our legal liability to you is capped at the amount you spent in the game over the last 6 months, or $10.00 USD. We are not liable for lost profits, data loss, device damage, or disappointment regarding simulated coins.</p>
+        </div>
+        <p>TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE COMPANY, ITS DIRECTORS, EMPLOYEES, AFFILIATES, AGENTS, OR LICENSORS BE LIABLE FOR ANY INDIRECT, INCIDENTAL, CONSEQUENTIAL, SPECIAL, PUNITIVE, OR EXEMPLARY DAMAGES (INCLUDING LOSS OF PROFITS, DATA, OR GOODWILL), NOR FOR ANY CLAIMS ARISING FROM RELIANCE ON OR MISUNDERSTANDING OF THE SIMULATED WITHDRAWAL PROGRESSION, "GAS FEES", OR VIRTUAL CURRENCIES.</p>
+        <p><strong>IN ALL CASES, THE COMPANY'S MAXIMUM TOTAL AGGREGATE LIABILITY SHALL BE LIMITED TO THE AMOUNT ACTUALLY PAID BY YOU (IF ANY) IN THE PRECEDING SIX (6) MONTHS, OR TEN UNITED STATES DOLLARS ($10.00 USD), WHICHEVER IS GREATER.</strong></p>
+        <a href="#toc" class="back-to-top">↑ Back to Table of Contents</a>
+      </section>
+
+      <!-- Section 11 -->
+      <section id="section-11">
+        <h2>11. Indemnification</h2>
+        <div class="callout-summary">
+          <div class="callout-header">
+            <svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7zM9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9v1z"/></svg>
+            Plain-Language Summary
+          </div>
+          <p>If you cheat, break these Terms, or violate someone else's rights, you agree to protect the Company and cover any resulting legal costs, judgments, and legal defense fees.</p>
+        </div>
+        <p>You agree to defend, indemnify, and hold harmless the Company, its parent entities, subsidiaries, officers, directors, employees, agents, and licensors from and against any claims, liabilities, damages, losses, costs, and expenses (including reasonable attorneys' fees) arising out of or relating to your violation of these Terms, your misuse of the Game, any cheating or clock tampering, or your infringement of any third-party rights.</p>
+        <a href="#toc" class="back-to-top">↑ Back to Table of Contents</a>
+      </section>
+
+      <!-- Section 12 -->
+      <section id="section-12">
+        <h2>12. Dispute Resolution, Mandatory Binding Arbitration, and Class Action Waiver</h2>
+        <div class="callout-summary">
+          <div class="callout-header">
+            <svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7zM9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9v1z"/></svg>
+            Plain-Language Summary
+          </div>
+          <p>Legal disputes must first be handled through 30 days of informal talks. If unresolved, they must be settled by individual binding arbitration. You give up the right to a jury trial or class action lawsuit. You can opt out within 30 days of first playing.</p>
+        </div>
+        <h3>12.1 Informal Resolution</h3>
+        <p>Before initiating arbitration, both parties agree to attempt informal good-faith negotiation for at least thirty (30) days by submitting written notice to <code>legal@waterballmerge.com</code>.</p>
+        <h3>12.2 Binding Arbitration</h3>
+        <p>Unresolved disputes shall be resolved exclusively through confidential binding individual arbitration administered by the American Arbitration Association (AAA) under its Consumer Arbitration Rules before a single neutral arbitrator. There is no judge or jury in arbitration.</p>
+        <h3>12.3 Class Action Waiver</h3>
+        <p><strong>ALL CLAIMS MUST BE BROUGHT ON AN INDIVIDUAL BASIS ONLY. YOU WAIVE THE RIGHT TO INITIATE OR PARTICIPATE IN ANY CLASS, COLLECTIVE, OR REPRESENTATIVE PROCEEDING.</strong></p>
+        <h3>12.4 Opt-Out Notice</h3>
+        <p>You may opt out of this arbitration clause by sending written notice to <code>legal@waterballmerge.com</code> within thirty (30) days of your first use of the Game.</p>
+        <a href="#toc" class="back-to-top">↑ Back to Table of Contents</a>
+      </section>
+
+      <!-- Section 13 -->
+      <section id="section-13">
+        <h2>13. Service Modifications, Maintenance, and Termination Rights</h2>
+        <div class="callout-summary">
+          <div class="callout-header">
+            <svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7zM9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9v1z"/></svg>
+            Plain-Language Summary
+          </div>
+          <p>We may update, rebalance, or shut down the game at any time. We can suspend or ban your account if you cheat. Any virtual points or boosters are forfeited if your account is closed.</p>
+        </div>
+        <p>The Company reserves the right to patch, balance, modify, suspend, or discontinue the Game or any feature at any time without notice or liability. Upon termination of your access or account, all licenses immediately expire and all virtual items and quest progression are permanently forfeited without refund.</p>
+        <a href="#toc" class="back-to-top">↑ Back to Table of Contents</a>
+      </section>
+
+      <!-- Section 14 -->
+      <section id="section-14">
+        <h2>14. Governing Law and Jurisdiction</h2>
+        <div class="callout-summary">
+          <div class="callout-header">
+            <svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7zM9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9v1z"/></svg>
+            Plain-Language Summary
+          </div>
+          <p>These terms are governed by the laws of Delaware, USA. Any court claims will be filed in Wilmington, Delaware, subject to mandatory local consumer rights in your country.</p>
+        </div>
+        <p>These Terms are governed by and construed in accordance with the laws of the State of Delaware, United States, without regard to conflict of laws principles. Permissible court proceedings shall take place exclusively in the state or federal courts located in Wilmington, Delaware, subject to mandatory local consumer protection statutes applicable in your country of residence.</p>
+        <a href="#toc" class="back-to-top">↑ Back to Table of Contents</a>
+      </section>
+
+      <!-- Section 15 -->
+      <section id="section-15">
+        <h2>15. Severability, Entire Agreement, and Miscellaneous Provisions</h2>
+        <div class="callout-summary">
+          <div class="callout-header">
+            <svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7zM9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9v1z"/></svg>
+            Plain-Language Summary
+          </div>
+          <p>This agreement (along with our Privacy Policy) is the full contract. If any single clause is found unenforceable, the rest of the terms remain in complete effect.</p>
+        </div>
+        <p>These Terms, together with our <a href="privacy_policy.html" style="color: var(--primary); font-weight: 600;">Privacy Policy</a>, constitute the complete agreement between you and the Company. If any provision is deemed unenforceable, that provision will be modified to reflect intent and all remaining provisions shall remain in full force.</p>
+        <a href="#toc" class="back-to-top">↑ Back to Table of Contents</a>
+      </section>
+
+      <!-- Section 16 -->
+      <section id="section-16">
+        <h2>16. Contact Channels and Developer Support</h2>
+        <div class="callout-summary">
+          <div class="callout-header">
+            <svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7zM9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9v1z"/></svg>
+            Plain-Language Summary
+          </div>
+          <p>Have questions, need help, or want to submit an account inquiry? Contact our official support and legal teams via email.</p>
+        </div>
+        <p>If you have any questions, dispute notices, or support requests regarding these Terms, please reach out to us:</p>
+        <ul>
+          <li><strong>Developer / Publisher:</strong> Water Ball Merge Development Team</li>
+          <li><strong>Official Support Email:</strong> <code>support@waterballmerge.com</code></li>
+          <li><strong>Legal &amp; Dispute Inquiries:</strong> <code>legal@waterballmerge.com</code></li>
+          <li><strong>Privacy &amp; Data Rights:</strong> <code>privacy@waterballmerge.com</code></li>
+          <li><strong>Official Store Listing:</strong> <a href="https://play.google.com/store/apps/details?id=com.water.ball.merge.game" target="_blank" rel="noopener noreferrer" style="color: var(--primary); font-weight: 600;">Water Ball: Merge Game on Google Play</a></li>
+          <li><strong>Application Package ID:</strong> <code>com.water.ball.merge.game</code></li>
+        </ul>
+        <p>When inquiring about an account issue or cloud progress, please provide your <strong>Guest Referral Code</strong> (found in your in-game Profile Screen, formatted as <code>WATER-XXXXXX</code>) or your registered account email address.</p>
+        <a href="#toc" class="back-to-top">↑ Back to Table of Contents</a>
+      </section>
+
+    </main>
+
+    <!-- Document Footer -->
+    <footer class="doc-footer" role="contentinfo">
+      <div class="footer-links">
+        <a href="terms_and_conditions.html">Terms &amp; Conditions</a>
+        <a href="privacy_policy.html">Privacy Policy</a>
+        <a href="https://play.google.com/store/apps/details?id=com.water.ball.merge.game" target="_blank" rel="noopener noreferrer">Google Play Store</a>
+        <a href="mailto:support@waterballmerge.com">Developer Support</a>
+      </div>
+      <p class="footer-copy">
+        &copy; 2026 Water Ball Merge Development Team. All rights reserved.<br>
+        Water Ball: Merge Game is built with Godot Engine 4.7.1.stable. All simulated currencies and withdrawal mechanics are fictional.
+      </p>
+    </footer>
+
+  </div>
+
+</body>
+</html>

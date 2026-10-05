@@ -212,6 +212,15 @@
             box-shadow: 0 20px 40px -15px rgba(99, 102, 241, 0.3);
         }
 
+        .app-card.water-card {
+            border-color: rgba(2, 132, 199, 0.35);
+        }
+
+        .app-card.water-card:hover {
+            border-color: rgba(6, 182, 212, 0.7);
+            box-shadow: 0 20px 40px -15px rgba(6, 182, 212, 0.35);
+        }
+
         .app-top {
             display: flex;
             align-items: center;
@@ -273,6 +282,12 @@
             background: rgba(16, 185, 129, 0.15);
             color: #6ee7b7;
             border: 1px solid rgba(16, 185, 129, 0.3);
+        }
+
+        .tag-cyan {
+            background: rgba(6, 182, 212, 0.15);
+            color: #67e8f9;
+            border: 1px solid rgba(6, 182, 212, 0.3);
         }
 
         .app-desc {
@@ -339,6 +354,16 @@
         .btn-indigo:hover {
             transform: translateY(-2px);
             box-shadow: 0 12px 25px -4px rgba(99, 102, 241, 0.6);
+        }
+
+        .btn-cyan {
+            background: linear-gradient(135deg, #0284c7, #06b6d4);
+            box-shadow: 0 8px 20px -4px rgba(2, 132, 199, 0.5);
+        }
+
+        .btn-cyan:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 25px -4px rgba(2, 132, 199, 0.6);
         }
 
         .btn-secondary {
@@ -477,6 +502,53 @@
             </div>
 
             <div class="apps-grid">
+
+                <!-- 0. Water Ball: Merge Game -->
+                <div class="app-card water-card">
+                    <div>
+                        <div class="app-top">
+                            <img src="water-ball-merge-icon.png" alt="Water Ball Merge Icon" class="app-icon" onerror="this.src='water-ball-merge-icon.png'">
+                            <div class="app-title-group">
+                                <h3>Water Ball: Merge</h3>
+                                <div class="app-tagline">2D Physics Water Ball Merge Arcade</div>
+                            </div>
+                        </div>
+
+                        <div class="tag-row">
+                            <span class="tag tag-cyan">Featured Game</span>
+                            <span class="tag tag-indigo">2D Physics</span>
+                            <span class="tag tag-green">Arcade Merge</span>
+                        </div>
+
+                        <p class="app-desc">
+                            A juicy, fluid-packed physics merge puzzle game! Drop bouncy water balls into the jar, merge matching levels to evolve massive balls, trigger explosive bombs, shake the arena, and climb the global leaderboards.
+                        </p>
+
+                        <ul class="features-list">
+                            <li><span>✓</span> Dynamic 2D soft-body fluid & bouncy physics simulation</li>
+                            <li><span>✓</span> 11 Evolution tiers with animated facial reactions & splash VFX</li>
+                            <li><span>✓</span> Tactical Boosters: Bomb Blasts, Arena Shake, Double-Points & Shields</li>
+                            <li><span>✓</span> Cloud Saves with Supabase, referral earnings & offline support</li>
+                        </ul>
+                    </div>
+
+                    <div class="btn-group">
+                        <a href="https://play.google.com/store/apps/details?id=com.water.ball.merge.game" target="_blank" class="btn-primary btn-cyan">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M3.609 1.814L13.792 12 3.61 22.186a1.44 1.44 0 0 1-.227-.791V2.605c0-.285.08-.558.226-.791zm11.233 11.234l2.584 2.583-12.012 6.899 9.428-9.482zm0-2.096L5.414 1.47l12.012 6.898-2.584 2.584zm1.464 1.464l3.195 1.834c.883.507.883 1.334 0 1.841l-3.195 1.834-2.128-2.128 2.128-2.128z"/>
+                            </svg>
+                            Get on Google Play
+                        </a>
+                        <div style="display: flex; gap: 8px;">
+                            <a href="water-ball-merge-privacy.html" class="btn-secondary" style="flex: 1; text-align: center;">
+                                📄 Privacy
+                            </a>
+                            <a href="water-ball-merge-terms.html" class="btn-secondary" style="flex: 1; text-align: center;">
+                                ⚖️ Terms
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
                 <!-- 1. Bubblino: Bubble Pop Shooter -->
                 <div class="app-card bubblino-card">
@@ -621,6 +693,22 @@
             <div class="policy-grid">
                 <div class="policy-item">
                     <div>
+                        <h4>Water Ball: Merge Game (Privacy Policy)</h4>
+                        <p>Package: <code>com.water.ball.merge.game</code> &bull; Details Supabase cloud backup, Google AdMob/ironSource SDKs, GDPR/CCPA compliance, and guest accounts.</p>
+                    </div>
+                    <a href="water-ball-merge-privacy.html">Read Privacy Policy &rarr;</a>
+                </div>
+
+                <div class="policy-item">
+                    <div>
+                        <h4>Water Ball: Merge Game (Terms & Conditions)</h4>
+                        <p>Package: <code>com.water.ball.merge.game</code> &bull; Critical disclosures on 100% fictional virtual game currencies, simulated withdrawal mechanics, and fair play.</p>
+                    </div>
+                    <a href="water-ball-merge-terms.html">Read Terms & Conditions &rarr;</a>
+                </div>
+
+                <div class="policy-item">
+                    <div>
                         <h4>Bubblino</h4>
                         <p>Package: <code>com.bubblino.game</code> &bull; Explains ironSource & Unity Ads mediation, local save storage, and child safety.</p>
                     </div>
@@ -659,6 +747,8 @@
         <div class="container">
             <p>&copy; 2026 Deon Apps & Games. All rights reserved.</p>
             <p style="margin-top: 8px; font-size: 0.85rem;">
+                <a href="water-ball-merge-privacy.html">Water Ball Privacy</a> &bull; 
+                <a href="water-ball-merge-terms.html">Water Ball Terms</a> &bull; 
                 <a href="bubblino-privacy.html">Bubblino Privacy</a> &bull; 
                 <a href="box-arrow-pop-privacy.html">Box Arrow POP! Privacy</a> &bull; 
                 <a href="privacy.html">Daily Tracker Privacy</a> &bull; 
